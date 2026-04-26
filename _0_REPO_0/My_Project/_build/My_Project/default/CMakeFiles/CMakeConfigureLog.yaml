@@ -1,0 +1,59 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/ST/STM32CubeCLT_1.20.0/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Windows - 10.0.26200 - 
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/ST/STM32CubeCLT_1.20.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/ST/STM32CubeCLT_1.20.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/ST/STM32CubeCLT_1.20.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: c:/Program Files/Microchip/xc-dsc/v3.30/bin/xc-dsc-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      elf-cc1.exe: warning: Could not open resource file: c:\\program files\\microchip\\xc-dsc\\v3.30\\bin\\bin\\../c30_device.info
+      elf-cc1.exe: note: Please specify the location of a DFP with the -mdfp= option.
+        For more information, please refer to https://www.microchip.com/packs
+      Could not open resource file: c:\\program files\\microchip\\xc-dsc\\v3.30\\bin/c30_device.info
+      Please specify the location of a DFP with the -mdfp= option.
+        For more information, please refer to https://www.microchip.com/packs
+      Assembler messages:
+      Warning: Using default target divide cycle count of 17; please specify device.
+      Could not open resource file: c:\\program files\\microchip\\xc-dsc\\v3.30\\bin/c30_device.info
+      Please specify the location of a DFP with the -mdfp= option.
+        For more information, please refer to https://www.microchip.com/packs
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/ksj10/Desktop/_0_programs/_3_GIT_REPO/__PRIVATE/_37_MPLAB_VSCODE/_0_REPO_0/My_Project/_build/My_Project/default/CMakeFiles/3.28.1/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/ST/STM32CubeCLT_1.20.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
+      - "C:/ST/STM32CubeCLT_1.20.0/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      elf-gcc.exe (Microchip Technology) 8.3.1 (XC-DSC, Microchip v3.30) Build date: Oct  1 2025  
+      __XC_DSC_VERSION__ == 3030
+      Copyright (C) 2018 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+...

@@ -1,0 +1,2 @@
+CMakeFiles/My_Project_default_default_XC_DSC_compile.dir/bdf81c74cd988a6560fabf9a141510e7/_0_REPO_0/My_Project/main.c.o: \
+ C:/Users/ksj10/Desktop/_0_programs/_3_GIT_REPO/__PRIVATE/_37_MPLAB_VSCODE/_0_REPO_0/My_Project/main.c

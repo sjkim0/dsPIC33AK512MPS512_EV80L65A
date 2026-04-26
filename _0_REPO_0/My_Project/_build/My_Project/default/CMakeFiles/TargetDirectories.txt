@@ -1,0 +1,5 @@
+C:/Users/ksj10/Desktop/_0_programs/_3_GIT_REPO/__PRIVATE/_37_MPLAB_VSCODE/_0_REPO_0/My_Project/_build/My_Project/default/CMakeFiles/My_Project_default_default_XC_DSC_compile.dir
+C:/Users/ksj10/Desktop/_0_programs/_3_GIT_REPO/__PRIVATE/_37_MPLAB_VSCODE/_0_REPO_0/My_Project/_build/My_Project/default/CMakeFiles/My_Project_default_image_LhabGpX0.dir
+C:/Users/ksj10/Desktop/_0_programs/_3_GIT_REPO/__PRIVATE/_37_MPLAB_VSCODE/_0_REPO_0/My_Project/_build/My_Project/default/CMakeFiles/My_Project_default_Bin2Hex.dir
+C:/Users/ksj10/Desktop/_0_programs/_3_GIT_REPO/__PRIVATE/_37_MPLAB_VSCODE/_0_REPO_0/My_Project/_build/My_Project/default/CMakeFiles/edit_cache.dir
+C:/Users/ksj10/Desktop/_0_programs/_3_GIT_REPO/__PRIVATE/_37_MPLAB_VSCODE/_0_REPO_0/My_Project/_build/My_Project/default/CMakeFiles/rebuild_cache.dir
