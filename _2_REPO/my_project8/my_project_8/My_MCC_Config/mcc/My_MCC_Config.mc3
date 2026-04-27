@@ -170,7 +170,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\system\pins.h</file>
-         <hash>4c0f6673b18f584cbb49a6233ccc0e2aafabf74507daa4e8917a0b9de14c1173</hash>
+         <hash>0cf0a8ebe61229db6764c5f66c2f64c28ef0a88c9a0f97d903fa242e204a2eab</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\system\reset.h</file>
@@ -202,7 +202,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\system\src\pins.c</file>
-         <hash>db8d6871ef3d6270c83772432c5800bbaebf9ccfaceb79062fadd905847ecf5a</hash>
+         <hash>0eae849013c4c3dd7ba9af94b0a627e0044f5fff089513ed5e1fed018c9282b5</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\system\src\reset.c</file>

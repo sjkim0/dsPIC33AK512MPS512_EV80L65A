@@ -52,7 +52,7 @@ void PINS_Initialize(void)
     LATD = 0x0000UL;
     LATE = 0x0000UL;
     LATF = 0x0000UL;
-    LATG = 0x0000UL;
+    LATG = 0x0100UL;
     LATH = 0x0000UL;
 
     /****************************************************************************
@@ -64,7 +64,7 @@ void PINS_Initialize(void)
     TRISD = 0xFFFFUL;
     TRISE = 0x07FFUL;
     TRISF = 0x0FEFUL;
-    TRISG = 0x03F7UL;
+    TRISG = 0x02F7UL;
     TRISH = 0x0007UL;
 
 

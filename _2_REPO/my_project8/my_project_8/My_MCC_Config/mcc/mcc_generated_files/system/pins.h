@@ -43,6 +43,57 @@
 // Section: Device Pin Macros
 /**
  * @ingroup  pinsdriver
+ * @brief    Sets the RG8 GPIO Pin which has a custom name of IO_RG8 to High
+ * @pre      The RG8 must be set as Output Pin             
+ * @param    none
+ * @return   none  
+ */
+#define IO_RG8_SetHigh()          (_LATG8 = 1)
+
+/**
+ * @ingroup  pinsdriver
+ * @brief    Sets the RG8 GPIO Pin which has a custom name of IO_RG8 to Low
+ * @pre      The RG8 must be set as Output Pin
+ * @param    none
+ * @return   none  
+ */
+#define IO_RG8_SetLow()           (_LATG8 = 0)
+
+/**
+ * @ingroup  pinsdriver
+ * @brief    Toggles the RG8 GPIO Pin which has a custom name of IO_RG8
+ * @pre      The RG8 must be set as Output Pin
+ * @param    none
+ * @return   none  
+ */
+#define IO_RG8_Toggle()           (_LATG8 ^= 1)
+
+/**
+ * @ingroup  pinsdriver
+ * @brief    Reads the value of the RG8 GPIO Pin which has a custom name of IO_RG8
+ * @param    none
+ * @return   none  
+ */
+#define IO_RG8_GetValue()         _RG8
+
+/**
+ * @ingroup  pinsdriver
+ * @brief    Configures the RG8 GPIO Pin which has a custom name of IO_RG8 as Input
+ * @param    none
+ * @return   none  
+ */
+#define IO_RG8_SetDigitalInput()  (_TRISG8 = 1)
+
+/**
+ * @ingroup  pinsdriver
+ * @brief    Configures the RG8 GPIO Pin which has a custom name of IO_RG8 as Output
+ * @param    none
+ * @return   none  
+ */
+#define IO_RG8_SetDigitalOutput() (_TRISG8 = 0)
+
+/**
+ * @ingroup  pinsdriver
  * @brief    Initializes the PINS module
  * @param    none
  * @return   none  
