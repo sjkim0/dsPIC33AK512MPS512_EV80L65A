@@ -53,19 +53,19 @@ void PINS_Initialize(void)
     LATE = 0x0000UL;
     LATF = 0x0000UL;
     LATG = 0x0100UL;
-    LATH = 0x0000UL;
+    LATH = 0x0002UL;
 
     /****************************************************************************
      * Setting the GPIO Direction SFR(s)
      ***************************************************************************/
-    TRISA = 0xFFF7UL;
+    TRISA = 0xFFFFUL;
     TRISB = 0xFFFFUL;
     TRISC = 0xFFFFUL;
     TRISD = 0xFFFFUL;
     TRISE = 0x07FFUL;
     TRISF = 0x0FEFUL;
     TRISG = 0x02F7UL;
-    TRISH = 0x0007UL;
+    TRISH = 0x0004UL;
 
 
     /****************************************************************************
@@ -105,8 +105,8 @@ void PINS_Initialize(void)
     /****************************************************************************
      * Setting the Analog/Digital Configuration SFR(s)
      ***************************************************************************/
-    ANSELA = 0xFFF1UL;
-    ANSELB = 0xFFFFUL;
+    ANSELA = 0xFFFFUL;
+    ANSELB = 0xFFE7UL;
     ANSELE = 0x0003UL;
     ANSELF = 0x0001UL;
 
@@ -115,10 +115,12 @@ void PINS_Initialize(void)
      ***************************************************************************/
       PINS_PPSUnlock(); // unlock PPS
 
-        RPINR14bits.SDI1R = 0x0003UL; //RA2->SPI1:SDI1;
-        RPOR0bits.RP4R = 0x0019UL;  //RA3->SPI1:SDO1;
-        RPINR14bits.SCK1R = 0x0002UL;  //RA1->SPI1:SCK1IN;
-        RPOR0bits.RP2R = 0x001AUL;  //RA1->SPI1:SCK1OUT;
+        RPINR13bits.U1RXR = 0x0073UL; //RH2->UART1:U1RX;
+        RPINR14bits.SDI1R = 0x0068UL; //RG7->SPI1:SDI1;
+        RPOR28bits.RP114R = 0x0013UL;  //RH1->UART1:U1TX;
+        RPOR26bits.RP105R = 0x0019UL;  //RG8->SPI1:SDO1;
+        RPINR14bits.SCK1R = 0x0067UL;  //RG6->SPI1:SCK1IN;
+        RPOR25bits.RP103R = 0x001AUL;  //RG6->SPI1:SCK1OUT;
 
       PINS_PPSLock(); // lock PPS
 

@@ -115,6 +115,9 @@ inline static uint32_t CLOCK_GeneratorFrequencyGet(enum CLOCK_GENERATOR generato
         case CLOCK_GENERATOR_6:
                 genFrequency = 320000000U;
                 break;
+        case CLOCK_GENERATOR_7:
+                genFrequency = 8000000U;
+                break;
         default:
                 break;
     }

@@ -1,0 +1,290 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "e24cf9e2-928b-48e3-96fe-45cdccce1592")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 91.44 72.39)
+		(size 43.18 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0544277b-7d61-4893-94b6-6595b93420ae")
+		(property "Sheetname" "BLOCK_dsPIC33AK512MPS505"
+			(at 91.44 71.6784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "BLOCK_dsPIC33AK512MPS505.kicad_sch"
+			(at 91.44 111.0746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "dspic33ak512mps512_baseboard"
+				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 151.13 72.39)
+		(size 43.18 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0e2f0a53-7bb6-4ddf-ac23-cb9e1b06e12b")
+		(property "Sheetname" "BLOCK_SIGNAL_IO"
+			(at 151.13 71.6784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "BLOCK_SIGNAL_IO.kicad_sch"
+			(at 151.13 111.0746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "dspic33ak512mps512_baseboard"
+				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 207.01 72.39)
+		(size 43.18 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "152ec2d9-8dbd-4d80-83d8-0e67e8f65045")
+		(property "Sheetname" "BLOCK_STROAGE"
+			(at 207.01 71.6784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "BLOCK_STROAGE.kicad_sch"
+			(at 207.01 111.0746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "dspic33ak512mps512_baseboard"
+				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 34.29 21.59)
+		(size 215.9 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "82b2ddde-1036-4aa9-ad5b-b1f590151d1d")
+		(property "Sheetname" "BLOCK_PWR"
+			(at 34.29 20.8784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "BLOCK_PWR.kicad_sch"
+			(at 34.29 60.2746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "dspic33ak512mps512_baseboard"
+				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 72.39)
+		(size 43.18 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e5eb7f35-5676-4c28-b984-cb300ec474a9")
+		(property "Sheetname" "BLOCK_DIM_CONNECT"
+			(at 35.56 71.6784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "BLOCK_DIM_CONNECT.kicad_sch"
+			(at 35.56 111.0746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "dspic33ak512mps512_baseboard"
+				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 124.46)
+		(size 214.63 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "fcb2a9e7-dda1-41f1-b88b-03df24deb6b2")
+		(property "Sheetname" "BLOCK_TERMINAL"
+			(at 35.56 123.7484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "BLOCK_TERMINAL.kicad_sch"
+			(at 35.56 163.1446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "dspic33ak512mps512_baseboard"
+				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
