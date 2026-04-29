@@ -1,11 +1,11 @@
 /**
- * ADC1 Generated Driver Header File
+ * ADC3 Generated Driver Header File
  * 
- * @file      adc1.h
+ * @file      adc3.h
  *            
  * @ingroup   adcdriver
  *            
- * @brief     This is the generated driver header file for the ADC1 driver          
+ * @brief     This is the generated driver header file for the ADC3 driver          
  *
  * @skipline @version   PLIB Version 1.2.1
  *            
@@ -33,8 +33,8 @@
     THIS SOFTWARE.
 */
 
-#ifndef ADC1_H
-#define ADC1_H
+#ifndef ADC3_H
+#define ADC3_H
 
 // Section: Included Files
 
@@ -50,39 +50,39 @@
   @ingroup  adcdriver
   @brief    Defines the ADC Resolution
 */
-#define ADC1_RESOLUTION 12
+#define ADC3_RESOLUTION 12
 
 /**
  @ingroup  adcdriver
- @enum     ADC1_CHANNEL
+ @enum     ADC3_CHANNEL
  @brief    Defines the ADC channles that are selected from the MCC Melody 
            User Interface for the ADC conversions.
  @note     The enum list in the Help document might be just a reference to show 
            the analog channel list. Generated enum list is based on the configuration 
            done by user in the MCC Melody user interface.
 */
-enum ADC1_CHANNEL
+enum ADC3_CHANNEL
 {
-    ADC1_Channel0,    /**<Channel Name:Channel_0 connected to ADC1_AN0 */
-    ADC1_Channel1,    /**<Channel Name:Channel_1 connected to ADC1_AN1 */
-    ADC1_Channel2,    /**<Channel Name:Channel_2 connected to ADC1_AN2 */
-    ADC1_Channel3,    /**<Channel Name:Channel_3 connected to ADC1_AN3 */
-    ADC1_Channel4,    /**<Channel Name:Channel_4 connected to ADC1_AN4 */
-    ADC1_Channel5,    /**<Channel Name:Channel_5 connected to ADC1_AN6 */
-    ADC1_Channel6,    /**<Channel Name:Channel_6 connected to ADC1_AN7 */
-    ADC1_Channel7,    /**<Channel Name:Channel_7 connected to ADC1_AN0 */
-    ADC1_MAX_CHANNELS = 8    /**< Maximum number of channels configured by user for ADC1 */
+    ADC3_Channel0,    /**<Channel Name:Channel_0 connected to ADC3_AN0 */
+    ADC3_Channel1,    /**<Channel Name:Channel_1 connected to ADC3_AN1 */
+    ADC3_Channel2,    /**<Channel Name:Channel_2 connected to ADC3_AN2 */
+    ADC3_Channel3,    /**<Channel Name:Channel_3 connected to ADC3_AN3 */
+    ADC3_Channel4,    /**<Channel Name:Channel_4 connected to ADC3_AN4 */
+    ADC3_Channel5,    /**<Channel Name:Channel_5 connected to ADC3_AN5 */
+    ADC3_Channel6,    /**<Channel Name:Channel_6 connected to ADC3_AN6 */
+    ADC3_Channel7,    /**<Channel Name:Channel_7 connected to ADC3_AN7 */
+    ADC3_MAX_CHANNELS = 8    /**< Maximum number of channels configured by user for ADC3 */
 };
 
 /**
  @ingroup  adcdriver
  @enum     ADC_CMP
- @brief    Defines the ADC1 comparators that are 
+ @brief    Defines the ADC3 comparators that are 
            available for the module to use.
 */
-enum ADC1_CMP
+enum ADC3_CMP
 {
-    ADC1_MAX_CMPS = 0    /**< Maximum Comparators configured by user for ADC1 */
+    ADC3_MAX_CMPS = 0    /**< Maximum Comparators configured by user for ADC3 */
 };
 
 // Section: Data Type Definitions
@@ -95,63 +95,63 @@ enum ADC1_CMP
  *           This allows defining a structure with application specific name using 
  *           the 'Custom Name' field. Application specific name allows the API Portability.
 */
-extern const struct ADC_INTERFACE ADC1;
+extern const struct ADC_INTERFACE ADC3;
 
 
 // Section: Driver Interface Functions
 
 /**
  * @ingroup  adcdriver
- * @brief    Initializes ADC1 module, using the given initialization data
- *           This function must be called before any other ADC1 function is called
+ * @brief    Initializes ADC3 module, using the given initialization data
+ *           This function must be called before any other ADC3 function is called
  * @param    none
  * @return   none  
  */
-void ADC1_Initialize (void);
+void ADC3_Initialize (void);
 
 /**
  * @ingroup  adcdriver
- * @brief    Deinitializes the ADC1 to POR values
+ * @brief    Deinitializes the ADC3 to POR values
  * @param    none
  * @return   none  
  */
-void ADC1_Deinitialize(void);
+void ADC3_Deinitialize(void);
 
 /**
  * @ingroup  adcdriver
- * @brief    This inline function enables the ADC1 module
- * @pre      \ref ADC1_IsReady must be called to know the status of ADC
+ * @brief    This inline function enables the ADC3 module
+ * @pre      \ref ADC3_IsReady must be called to know the status of ADC
  * @param    none
  * @return   none  
  */
-inline static void ADC1_Enable(void)
+inline static void ADC3_Enable(void)
 {
-    AD1CONbits.ON = 1U;
+    AD3CONbits.ON = 1U;
 }
 
 /**
  * @ingroup     adcdriver
  * @brief       This inline function returns true if ADC is ready
- * @pre         This function must be called after calling \ref ADC1_Enable to know ADC status
+ * @pre         This function must be called after calling \ref ADC3_Enable to know ADC status
  * @param       none
  * @return      true - ADC is ready
  * @return      false - ADC is not ready 
  */
-inline static bool ADC1_IsReady(void)
+inline static bool ADC3_IsReady(void)
 {
-    return (bool)AD1CONbits.ADRDY;
+    return (bool)AD3CONbits.ADRDY;
 }
 
 /**
  * @ingroup  adcdriver
- * @brief    This inline function disables the ADC1 module
+ * @brief    This inline function disables the ADC3 module
  * @pre      none
  * @param    none
  * @return   none  
  */
-inline static void ADC1_Disable(void)
+inline static void ADC3_Disable(void)
 {
-   AD1CONbits.ON = 0U;
+   AD3CONbits.ON = 0U;
 }
 
 /**
@@ -161,9 +161,9 @@ inline static void ADC1_Disable(void)
  * @param    none
  * @return   none  
  */
-inline static void ADC1_SoftwareTriggerEnable(void)
+inline static void ADC3_SoftwareTriggerEnable(void)
 {
-   AD1SWTRG = 0xFFFFFFFFU;
+   AD3SWTRG = 0xFFFFFFFFU;
 }
 
 /**
@@ -173,9 +173,9 @@ inline static void ADC1_SoftwareTriggerEnable(void)
  * @param    none
  * @return   none  
  */
-inline static void ADC1_SoftwareTriggerDisable(void)
+inline static void ADC3_SoftwareTriggerDisable(void)
 {
-   AD1SWTRG = 0x0U;
+   AD3SWTRG = 0x0U;
 }
 
 /**
@@ -185,33 +185,33 @@ inline static void ADC1_SoftwareTriggerDisable(void)
  * @param[in]   channel - Channel for conversion      none
  * @return      none  
  */
-inline static void ADC1_ChannelSoftwareTriggerEnable(const enum ADC1_CHANNEL channel)
+inline static void ADC3_ChannelSoftwareTriggerEnable(const enum ADC3_CHANNEL channel)
 {
     switch(channel)
     {
-        case ADC1_Channel0:
-                AD1SWTRGbits.CH0TRG = 0x1U;
+        case ADC3_Channel0:
+                AD3SWTRGbits.CH0TRG = 0x1U;
                 break;
-        case ADC1_Channel1:
-                AD1SWTRGbits.CH1TRG = 0x1U;
+        case ADC3_Channel1:
+                AD3SWTRGbits.CH1TRG = 0x1U;
                 break;
-        case ADC1_Channel2:
-                AD1SWTRGbits.CH2TRG = 0x1U;
+        case ADC3_Channel2:
+                AD3SWTRGbits.CH2TRG = 0x1U;
                 break;
-        case ADC1_Channel3:
-                AD1SWTRGbits.CH3TRG = 0x1U;
+        case ADC3_Channel3:
+                AD3SWTRGbits.CH3TRG = 0x1U;
                 break;
-        case ADC1_Channel4:
-                AD1SWTRGbits.CH4TRG = 0x1U;
+        case ADC3_Channel4:
+                AD3SWTRGbits.CH4TRG = 0x1U;
                 break;
-        case ADC1_Channel5:
-                AD1SWTRGbits.CH5TRG = 0x1U;
+        case ADC3_Channel5:
+                AD3SWTRGbits.CH5TRG = 0x1U;
                 break;
-        case ADC1_Channel6:
-                AD1SWTRGbits.CH6TRG = 0x1U;
+        case ADC3_Channel6:
+                AD3SWTRGbits.CH6TRG = 0x1U;
                 break;
-        case ADC1_Channel7:
-                AD1SWTRGbits.CH7TRG = 0x1U;
+        case ADC3_Channel7:
+                AD3SWTRGbits.CH7TRG = 0x1U;
                 break;
         default:
                 break;
@@ -225,33 +225,33 @@ inline static void ADC1_ChannelSoftwareTriggerEnable(const enum ADC1_CHANNEL cha
  * @param[in]   channel - Channel for conversion  
  * @return      none  
  */
-inline static void ADC1_ChannelSoftwareTriggerDisable(const enum ADC1_CHANNEL channel)
+inline static void ADC3_ChannelSoftwareTriggerDisable(const enum ADC3_CHANNEL channel)
 {
     switch(channel)
     {
-        case ADC1_Channel0:
-                AD1SWTRGbits.CH0TRG = 0x0U;
+        case ADC3_Channel0:
+                AD3SWTRGbits.CH0TRG = 0x0U;
                 break;
-        case ADC1_Channel1:
-                AD1SWTRGbits.CH1TRG = 0x0U;
+        case ADC3_Channel1:
+                AD3SWTRGbits.CH1TRG = 0x0U;
                 break;
-        case ADC1_Channel2:
-                AD1SWTRGbits.CH2TRG = 0x0U;
+        case ADC3_Channel2:
+                AD3SWTRGbits.CH2TRG = 0x0U;
                 break;
-        case ADC1_Channel3:
-                AD1SWTRGbits.CH3TRG = 0x0U;
+        case ADC3_Channel3:
+                AD3SWTRGbits.CH3TRG = 0x0U;
                 break;
-        case ADC1_Channel4:
-                AD1SWTRGbits.CH4TRG = 0x0U;
+        case ADC3_Channel4:
+                AD3SWTRGbits.CH4TRG = 0x0U;
                 break;
-        case ADC1_Channel5:
-                AD1SWTRGbits.CH5TRG = 0x0U;
+        case ADC3_Channel5:
+                AD3SWTRGbits.CH5TRG = 0x0U;
                 break;
-        case ADC1_Channel6:
-                AD1SWTRGbits.CH6TRG = 0x0U;
+        case ADC3_Channel6:
+                AD3SWTRGbits.CH6TRG = 0x0U;
                 break;
-        case ADC1_Channel7:
-                AD1SWTRGbits.CH7TRG = 0x0U;
+        case ADC3_Channel7:
+                AD3SWTRGbits.CH7TRG = 0x0U;
                 break;
         default:
                 break;
@@ -266,35 +266,35 @@ inline static void ADC1_ChannelSoftwareTriggerDisable(const enum ADC1_CHANNEL ch
  * @return     requested number of conversions  
  * @note       This function is applicable in Window mode and Integration conversion mode only 
  */
-inline static uint16_t ADC1_SampleCountGet(const enum ADC1_CHANNEL channel)
+inline static uint16_t ADC3_SampleCountGet(const enum ADC3_CHANNEL channel)
 {
     uint16_t count = 0x0U;
 
     switch(channel)
     {
-        case ADC1_Channel0:
-                count = AD1CH0CNTbits.CNT;
+        case ADC3_Channel0:
+                count = AD3CH0CNTbits.CNT;
                 break;
-        case ADC1_Channel1:
-                count = AD1CH1CNTbits.CNT;
+        case ADC3_Channel1:
+                count = AD3CH1CNTbits.CNT;
                 break;
-        case ADC1_Channel2:
-                count = AD1CH2CNTbits.CNT;
+        case ADC3_Channel2:
+                count = AD3CH2CNTbits.CNT;
                 break;
-        case ADC1_Channel3:
-                count = AD1CH3CNTbits.CNT;
+        case ADC3_Channel3:
+                count = AD3CH3CNTbits.CNT;
                 break;
-        case ADC1_Channel4:
-                count = AD1CH4CNTbits.CNT;
+        case ADC3_Channel4:
+                count = AD3CH4CNTbits.CNT;
                 break;
-        case ADC1_Channel5:
-                count = AD1CH5CNTbits.CNT;
+        case ADC3_Channel5:
+                count = AD3CH5CNTbits.CNT;
                 break;
-        case ADC1_Channel6:
-                count = AD1CH6CNTbits.CNT;
+        case ADC3_Channel6:
+                count = AD3CH6CNTbits.CNT;
                 break;
-        case ADC1_Channel7:
-                count = AD1CH7CNTbits.CNT;
+        case ADC3_Channel7:
+                count = AD3CH7CNTbits.CNT;
                 break;
         default:
                 break;
@@ -310,35 +310,35 @@ inline static uint16_t ADC1_SampleCountGet(const enum ADC1_CHANNEL channel)
  * @return     number of conversions completed  
  * @note       This function is applicable in Window mode and Integration conversion mode only 
  */
-inline static uint16_t ADC1_SampleCountStatusGet(const enum ADC1_CHANNEL channel)
+inline static uint16_t ADC3_SampleCountStatusGet(const enum ADC3_CHANNEL channel)
 {
     uint16_t countStatus = 0x0U;
 
     switch(channel)
     {
-        case ADC1_Channel0:
-                countStatus = AD1CH0CNTbits.CNTSTAT;
+        case ADC3_Channel0:
+                countStatus = AD3CH0CNTbits.CNTSTAT;
                 break;
-        case ADC1_Channel1:
-                countStatus = AD1CH1CNTbits.CNTSTAT;
+        case ADC3_Channel1:
+                countStatus = AD3CH1CNTbits.CNTSTAT;
                 break;
-        case ADC1_Channel2:
-                countStatus = AD1CH2CNTbits.CNTSTAT;
+        case ADC3_Channel2:
+                countStatus = AD3CH2CNTbits.CNTSTAT;
                 break;
-        case ADC1_Channel3:
-                countStatus = AD1CH3CNTbits.CNTSTAT;
+        case ADC3_Channel3:
+                countStatus = AD3CH3CNTbits.CNTSTAT;
                 break;
-        case ADC1_Channel4:
-                countStatus = AD1CH4CNTbits.CNTSTAT;
+        case ADC3_Channel4:
+                countStatus = AD3CH4CNTbits.CNTSTAT;
                 break;
-        case ADC1_Channel5:
-                countStatus = AD1CH5CNTbits.CNTSTAT;
+        case ADC3_Channel5:
+                countStatus = AD3CH5CNTbits.CNTSTAT;
                 break;
-        case ADC1_Channel6:
-                countStatus = AD1CH6CNTbits.CNTSTAT;
+        case ADC3_Channel6:
+                countStatus = AD3CH6CNTbits.CNTSTAT;
                 break;
-        case ADC1_Channel7:
-                countStatus = AD1CH7CNTbits.CNTSTAT;
+        case ADC3_Channel7:
+                countStatus = AD3CH7CNTbits.CNTSTAT;
                 break;
         default:
                 break;
@@ -351,39 +351,39 @@ inline static uint16_t ADC1_SampleCountStatusGet(const enum ADC1_CHANNEL channel
  * @brief      Returns the conversion value for the channel selected
  * @pre        This inline function returns the conversion value only after the conversion is complete. 
  *             Conversion completion status can be checked using 
- *             \ref ADC1_IsConversionComplete(channel) function.
+ *             \ref ADC3_IsConversionComplete(channel) function.
  * @param[in]  channel - Selected channel  
  * @return     Returns the analog to digital converted value  
  */
-inline static uint32_t ADC1_ConversionResultGet(const enum ADC1_CHANNEL channel)
+inline static uint32_t ADC3_ConversionResultGet(const enum ADC3_CHANNEL channel)
 {
     uint32_t result = 0x0U;
 
     switch(channel)
     {
-        case ADC1_Channel0:
-                result = AD1CH0DATA;
+        case ADC3_Channel0:
+                result = AD3CH0DATA;
                 break;
-        case ADC1_Channel1:
-                result = AD1CH1DATA;
+        case ADC3_Channel1:
+                result = AD3CH1DATA;
                 break;
-        case ADC1_Channel2:
-                result = AD1CH2DATA;
+        case ADC3_Channel2:
+                result = AD3CH2DATA;
                 break;
-        case ADC1_Channel3:
-                result = AD1CH3DATA;
+        case ADC3_Channel3:
+                result = AD3CH3DATA;
                 break;
-        case ADC1_Channel4:
-                result = AD1CH4DATA;
+        case ADC3_Channel4:
+                result = AD3CH4DATA;
                 break;
-        case ADC1_Channel5:
-                result = AD1CH5DATA;
+        case ADC3_Channel5:
+                result = AD3CH5DATA;
                 break;
-        case ADC1_Channel6:
-                result = AD1CH6DATA;
+        case ADC3_Channel6:
+                result = AD3CH6DATA;
                 break;
-        case ADC1_Channel7:
-                result = AD1CH7DATA;
+        case ADC3_Channel7:
+                result = AD3CH7DATA;
                 break;
         default:
                 break;
@@ -396,41 +396,41 @@ inline static uint32_t ADC1_ConversionResultGet(const enum ADC1_CHANNEL channel)
  * @brief      This inline function returns the status of conversion.This function is used to 
  *             determine if conversion is completed. When conversion is complete 
  *             the function returns true otherwise false.
- * @pre        \ref ADC1_SoftwareTriggerEnable() function should have been 
+ * @pre        \ref ADC3_SoftwareTriggerEnable() function should have been 
  *             called before calling this function.
  * @param[in]  channel - Selected channel  
  * @return     true - Conversion is complete.
  * @return     false - Conversion is not complete.  
  */
-inline static bool ADC1_IsConversionComplete(const enum ADC1_CHANNEL channel)
+inline static bool ADC3_IsConversionComplete(const enum ADC3_CHANNEL channel)
 {
     bool status = false;
 
     switch(channel)
     {
-        case ADC1_Channel0:
-                status = AD1STATbits.CH0RDY;
+        case ADC3_Channel0:
+                status = AD3STATbits.CH0RDY;
                 break;
-        case ADC1_Channel1:
-                status = AD1STATbits.CH1RDY;
+        case ADC3_Channel1:
+                status = AD3STATbits.CH1RDY;
                 break;
-        case ADC1_Channel2:
-                status = AD1STATbits.CH2RDY;
+        case ADC3_Channel2:
+                status = AD3STATbits.CH2RDY;
                 break;
-        case ADC1_Channel3:
-                status = AD1STATbits.CH3RDY;
+        case ADC3_Channel3:
+                status = AD3STATbits.CH3RDY;
                 break;
-        case ADC1_Channel4:
-                status = AD1STATbits.CH4RDY;
+        case ADC3_Channel4:
+                status = AD3STATbits.CH4RDY;
                 break;
-        case ADC1_Channel5:
-                status = AD1STATbits.CH5RDY;
+        case ADC3_Channel5:
+                status = AD3STATbits.CH5RDY;
                 break;
-        case ADC1_Channel6:
-                status = AD1STATbits.CH6RDY;
+        case ADC3_Channel6:
+                status = AD3STATbits.CH6RDY;
                 break;
-        case ADC1_Channel7:
-                status = AD1STATbits.CH7RDY;
+        case ADC3_Channel7:
+                status = AD3STATbits.CH7RDY;
                 break;
         default:
                 break;
@@ -446,33 +446,33 @@ inline static bool ADC1_IsConversionComplete(const enum ADC1_CHANNEL channel)
  * @param[in]  channel - Selected channel  
  * @return     none  
  */
-inline static void ADC1_IndividualChannelInterruptEnable(const enum ADC1_CHANNEL channel)
+inline static void ADC3_IndividualChannelInterruptEnable(const enum ADC3_CHANNEL channel)
 {
     switch(channel)
     {
-        case ADC1_Channel0:
-                IEC4bits.AD1CH0IE = 1U;
+        case ADC3_Channel0:
+                IEC6bits.AD3CH0IE = 1U;
                 break;
-        case ADC1_Channel1:
-                IEC4bits.AD1CH1IE = 1U;
+        case ADC3_Channel1:
+                IEC6bits.AD3CH1IE = 1U;
                 break;
-        case ADC1_Channel2:
-                IEC5bits.AD1CH2IE = 1U;
+        case ADC3_Channel2:
+                IEC6bits.AD3CH2IE = 1U;
                 break;
-        case ADC1_Channel3:
-                IEC5bits.AD1CH3IE = 1U;
+        case ADC3_Channel3:
+                IEC6bits.AD3CH3IE = 1U;
                 break;
-        case ADC1_Channel4:
-                IEC5bits.AD1CH4IE = 1U;
+        case ADC3_Channel4:
+                IEC6bits.AD3CH4IE = 1U;
                 break;
-        case ADC1_Channel5:
-                IEC5bits.AD1CH5IE = 1U;
+        case ADC3_Channel5:
+                IEC6bits.AD3CH5IE = 1U;
                 break;
-        case ADC1_Channel6:
-                IEC5bits.AD1CH6IE = 1U;
+        case ADC3_Channel6:
+                IEC6bits.AD3CH6IE = 1U;
                 break;
-        case ADC1_Channel7:
-                IEC5bits.AD1CH7IE = 1U;
+        case ADC3_Channel7:
+                IEC6bits.AD3CH7IE = 1U;
                 break;
         default:
                 break;
@@ -486,33 +486,33 @@ inline static void ADC1_IndividualChannelInterruptEnable(const enum ADC1_CHANNEL
  * @param[in]  channel - Selected channel  
  * @return     none  
  */
-inline static void ADC1_IndividualChannelInterruptDisable(const enum ADC1_CHANNEL channel)
+inline static void ADC3_IndividualChannelInterruptDisable(const enum ADC3_CHANNEL channel)
 {
     switch(channel)
     {
-        case ADC1_Channel0:
-                IEC4bits.AD1CH0IE = 0U;
+        case ADC3_Channel0:
+                IEC6bits.AD3CH0IE = 0U;
                 break;
-        case ADC1_Channel1:
-                IEC4bits.AD1CH1IE = 0U;
+        case ADC3_Channel1:
+                IEC6bits.AD3CH1IE = 0U;
                 break;
-        case ADC1_Channel2:
-                IEC5bits.AD1CH2IE = 0U;
+        case ADC3_Channel2:
+                IEC6bits.AD3CH2IE = 0U;
                 break;
-        case ADC1_Channel3:
-                IEC5bits.AD1CH3IE = 0U;
+        case ADC3_Channel3:
+                IEC6bits.AD3CH3IE = 0U;
                 break;
-        case ADC1_Channel4:
-                IEC5bits.AD1CH4IE = 0U;
+        case ADC3_Channel4:
+                IEC6bits.AD3CH4IE = 0U;
                 break;
-        case ADC1_Channel5:
-                IEC5bits.AD1CH5IE = 0U;
+        case ADC3_Channel5:
+                IEC6bits.AD3CH5IE = 0U;
                 break;
-        case ADC1_Channel6:
-                IEC5bits.AD1CH6IE = 0U;
+        case ADC3_Channel6:
+                IEC6bits.AD3CH6IE = 0U;
                 break;
-        case ADC1_Channel7:
-                IEC5bits.AD1CH7IE = 0U;
+        case ADC3_Channel7:
+                IEC6bits.AD3CH7IE = 0U;
                 break;
         default:
                 break;
@@ -523,38 +523,38 @@ inline static void ADC1_IndividualChannelInterruptDisable(const enum ADC1_CHANNE
  * @ingroup    adcdriver
  * @brief      This inline function clears individual channel interrupt flag
  * @pre        The flag is not cleared without reading the data from buffer.
- *             Hence call \ref ADC1_ConversionResultGet() function to read data 
+ *             Hence call \ref ADC3_ConversionResultGet() function to read data 
  *             before calling this function
  * @param[in]  channel - Selected channel  
  * @return     none  
  */
-inline static void ADC1_IndividualChannelInterruptFlagClear(const enum ADC1_CHANNEL channel)
+inline static void ADC3_IndividualChannelInterruptFlagClear(const enum ADC3_CHANNEL channel)
 {
     switch(channel)
     {
-        case ADC1_Channel0:
-                IFS4bits.AD1CH0IF = 0U;
+        case ADC3_Channel0:
+                IFS6bits.AD3CH0IF = 0U;
                 break;
-        case ADC1_Channel1:
-                IFS4bits.AD1CH1IF = 0U;
+        case ADC3_Channel1:
+                IFS6bits.AD3CH1IF = 0U;
                 break;
-        case ADC1_Channel2:
-                IFS5bits.AD1CH2IF = 0U;
+        case ADC3_Channel2:
+                IFS6bits.AD3CH2IF = 0U;
                 break;
-        case ADC1_Channel3:
-                IFS5bits.AD1CH3IF = 0U;
+        case ADC3_Channel3:
+                IFS6bits.AD3CH3IF = 0U;
                 break;
-        case ADC1_Channel4:
-                IFS5bits.AD1CH4IF = 0U;
+        case ADC3_Channel4:
+                IFS6bits.AD3CH4IF = 0U;
                 break;
-        case ADC1_Channel5:
-                IFS5bits.AD1CH5IF = 0U;
+        case ADC3_Channel5:
+                IFS6bits.AD3CH5IF = 0U;
                 break;
-        case ADC1_Channel6:
-                IFS5bits.AD1CH6IF = 0U;
+        case ADC3_Channel6:
+                IFS6bits.AD3CH6IF = 0U;
                 break;
-        case ADC1_Channel7:
-                IFS5bits.AD1CH7IF = 0U;
+        case ADC3_Channel7:
+                IFS6bits.AD3CH7IF = 0U;
                 break;
         default:
                 break;
@@ -569,33 +569,33 @@ inline static void ADC1_IndividualChannelInterruptFlagClear(const enum ADC1_CHAN
  * @param[in]  priorityValue  -  The numerical value of interrupt priority
  * @return     none  
  */
-inline static void ADC1_IndividualChannelInterruptPrioritySet(const enum ADC1_CHANNEL channel, enum INTERRUPT_PRIORITY priorityValue)
+inline static void ADC3_IndividualChannelInterruptPrioritySet(const enum ADC3_CHANNEL channel, enum INTERRUPT_PRIORITY priorityValue)
 {
 	switch(channel)
 	{
-		case ADC1_Channel0:
-				IPC19bits.AD1CH0IP = priorityValue;
+		case ADC3_Channel0:
+				IPC25bits.AD3CH0IP = priorityValue;
 				break;
-		case ADC1_Channel1:
-				IPC19bits.AD1CH1IP = priorityValue;
+		case ADC3_Channel1:
+				IPC25bits.AD3CH1IP = priorityValue;
 				break;
-		case ADC1_Channel2:
-				IPC20bits.AD1CH2IP = priorityValue;
+		case ADC3_Channel2:
+				IPC25bits.AD3CH2IP = priorityValue;
 				break;
-		case ADC1_Channel3:
-				IPC20bits.AD1CH3IP = priorityValue;
+		case ADC3_Channel3:
+				IPC25bits.AD3CH3IP = priorityValue;
 				break;
-		case ADC1_Channel4:
-				IPC20bits.AD1CH4IP = priorityValue;
+		case ADC3_Channel4:
+				IPC26bits.AD3CH4IP = priorityValue;
 				break;
-		case ADC1_Channel5:
-				IPC20bits.AD1CH5IP = priorityValue;
+		case ADC3_Channel5:
+				IPC26bits.AD3CH5IP = priorityValue;
 				break;
-		case ADC1_Channel6:
-				IPC21bits.AD1CH6IP = priorityValue;
+		case ADC3_Channel6:
+				IPC26bits.AD3CH6IP = priorityValue;
 				break;
-		case ADC1_Channel7:
-				IPC21bits.AD1CH7IP = priorityValue;
+		case ADC3_Channel7:
+				IPC26bits.AD3CH7IP = priorityValue;
 				break;
 		default:
 				break;
@@ -604,14 +604,14 @@ inline static void ADC1_IndividualChannelInterruptPrioritySet(const enum ADC1_CH
 
 /**
  * @ingroup    adcdriver
- * @brief      This function can be used to override default callback \ref ADC1_ChannelCallback
- *             and to define custom callback for ADC1 Channel event. 
+ * @brief      This function can be used to override default callback \ref ADC3_ChannelCallback
+ *             and to define custom callback for ADC3 Channel event. 
  *             Read the conversion result of the corresponding channel in the custom callback.
  * @pre        none
  * @param[in]  callback - Address of the callback function.  
  * @return     none  
  */
-void ADC1_ChannelCallbackRegister(void(*callback)(const enum ADC1_CHANNEL channel, uint16_t adcVal));
+void ADC3_ChannelCallbackRegister(void(*callback)(const enum ADC3_CHANNEL channel, uint16_t adcVal));
 
 /**
  * @ingroup    adcdriver
@@ -623,18 +623,18 @@ void ADC1_ChannelCallbackRegister(void(*callback)(const enum ADC1_CHANNEL channe
  * @param[in]  adcVal - conversion result of channel  
  * @return     none  
  */
-void ADC1_ChannelCallback(const enum ADC1_CHANNEL channel, uint16_t adcVal);
+void ADC3_ChannelCallback(const enum ADC3_CHANNEL channel, uint16_t adcVal);
 
 /**
  * @ingroup    adcdriver
- * @brief      This function can be used to override default callback \ref ADC1_Result32BitChannelCallback
- *             and to define custom callback for ADC1 Channel event. 
+ * @brief      This function can be used to override default callback \ref ADC3_Result32BitChannelCallback
+ *             and to define custom callback for ADC3 Channel event. 
  * @pre        none
  *             Read the conversion result of the corresponding channel in the custom callback.
  * @param[in]  callback - Address of the callback function.  
  * @return     none  
  */
-void ADC1_Result32BitChannelCallbackRegister(void(*callback)(const enum ADC1_CHANNEL channel, uint32_t adcVal));
+void ADC3_Result32BitChannelCallbackRegister(void(*callback)(const enum ADC3_CHANNEL channel, uint32_t adcVal));
 
 /**
  * @ingroup    adcdriver
@@ -646,17 +646,17 @@ void ADC1_Result32BitChannelCallbackRegister(void(*callback)(const enum ADC1_CHA
  * @param[in]  adcVal - conversion result of channel  
  * @return     none  
  */
-void ADC1_Result32BitChannelCallback(const enum ADC1_CHANNEL channel, uint32_t adcVal);
+void ADC3_Result32BitChannelCallback(const enum ADC3_CHANNEL channel, uint32_t adcVal);
 
 /**
  * @ingroup    adcdriver
  * @brief      This function can be used to override default callback and to 
- *             define custom callback for ADC1_Comparator event
+ *             define custom callback for ADC3_Comparator event
  * @pre        none
  * @param[in]  callback - Address of the callback function.  
  * @return     none  
  */
-void ADC1_ComparatorCallbackRegister(void(*callback)(const enum ADC1_CMP comparator));
+void ADC3_ComparatorCallbackRegister(void(*callback)(const enum ADC3_CMP comparator));
 
 /**
  * @ingroup    adcdriver
@@ -665,42 +665,42 @@ void ADC1_ComparatorCallbackRegister(void(*callback)(const enum ADC1_CMP compara
  * @param[in]  comparator - comparator in which compare event occurred  
  * @return     none  
  */
-void ADC1_ComparatorCallback(const enum ADC1_CMP comparator);
+void ADC3_ComparatorCallback(const enum ADC3_CMP comparator);
 
 /**
  * @ingroup    adcdriver
  * @brief      This function call used only in polling mode, if channel 
  *             conversion is done for requested channel, the calls the 
  *             respective callback function
- * @pre        \ref ADC1_Initialize() function should have been  
+ * @pre        \ref ADC3_Initialize() function should have been  
  *             called before calling this function.
  * @param[in]  channel - Selected channel.  
  * @return     none  
  * @note       This function has to be polled to notify channel callbacks and clear 
  *             the channel interrupt flags in non-interrupt mode of ADC
  */
-void ADC1_ChannelTasks(const enum ADC1_CHANNEL channel);
+void ADC3_ChannelTasks(const enum ADC3_CHANNEL channel);
 
 
 /**
  * @ingroup  adcdriver
- * @brief    Enables power for ADC1 Core
+ * @brief    Enables power for ADC3 Core
  *           This function is used to set the analog and digital power for 
- *           ADC1 shared Core.
+ *           ADC3 shared Core.
  * @pre      none
  * @param    none
  * @return   none  
  */
-void ADC1_SharedCorePowerEnable(void);
+void ADC3_SharedCorePowerEnable(void);
 
 /**
  * @ingroup  adcdriver
- * @brief    Calibrates the ADC1 Core
+ * @brief    Calibrates the ADC3 Core
  * @pre      none 
  * @param    none
  * @return   none  
  */
-void ADC1_SharedCoreCalibration(void);
+void ADC3_SharedCoreCalibration(void);
 
 /**
  * @ingroup  adcdriver
@@ -714,10 +714,10 @@ void ADC1_SharedCoreCalibration(void);
  *           or \ref PWM_TriggerCCompareValueSet before calling this funcion and enable corresponding 
  *           PWM trigger using \ref PWM_Trigger1Enable or \ref PWM_Trigger2Enable post calling it.
  */
-void ADC1_PWMTriggerSourceSet(const enum ADC1_CHANNEL channel, enum ADC_PWM_INSTANCE pwmInstance, enum ADC_PWM_TRIGGERS triggerNumber);
+void ADC3_PWMTriggerSourceSet(const enum ADC3_CHANNEL channel, enum ADC_PWM_INSTANCE pwmInstance, enum ADC_PWM_TRIGGERS triggerNumber);
 
 
-#endif //_ADC1_H
+#endif //_ADC3_H
     
 /**
  End of File
