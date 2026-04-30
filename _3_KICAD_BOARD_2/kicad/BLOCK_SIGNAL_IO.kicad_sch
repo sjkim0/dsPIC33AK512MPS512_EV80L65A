@@ -1714,7 +1714,7 @@
 			(uuid "27135684-cf0f-42a7-b925-419b9ada295a")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/0e2f0a53-7bb6-4ddf-ac23-cb9e1b06e12b"
 					(reference "#PWR041")
 					(unit 1)
@@ -1796,7 +1796,7 @@
 			(uuid "64269e76-27fc-4fcb-943a-b609373793ed")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/0e2f0a53-7bb6-4ddf-ac23-cb9e1b06e12b"
 					(reference "C28")
 					(unit 1)
@@ -1874,7 +1874,7 @@
 			(uuid "63420a04-1813-4958-bfae-fbf0665eb250")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/0e2f0a53-7bb6-4ddf-ac23-cb9e1b06e12b"
 					(reference "#PWR040")
 					(unit 1)
@@ -1952,7 +1952,7 @@
 			(uuid "c18c7dc1-f5b2-43d6-b216-e32e6c967822")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/0e2f0a53-7bb6-4ddf-ac23-cb9e1b06e12b"
 					(reference "#PWR042")
 					(unit 1)
@@ -2160,7 +2160,7 @@
 			(uuid "96ddc29b-959c-4f80-9a61-c3f35891fd02")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/0e2f0a53-7bb6-4ddf-ac23-cb9e1b06e12b"
 					(reference "U3")
 					(unit 1)
@@ -2240,7 +2240,7 @@
 			(uuid "eb5bafb7-c00e-42ae-9009-58789d4cbf02")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/0e2f0a53-7bb6-4ddf-ac23-cb9e1b06e12b"
 					(reference "R19")
 					(unit 1)
@@ -2318,7 +2318,7 @@
 			(uuid "079cda31-45b5-4591-ba72-df34e666a52d")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/0e2f0a53-7bb6-4ddf-ac23-cb9e1b06e12b"
 					(reference "#PWR043")
 					(unit 1)
@@ -2400,7 +2400,7 @@
 			(uuid "3361167c-572a-4ac0-b3da-ec65d452e0fe")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/0e2f0a53-7bb6-4ddf-ac23-cb9e1b06e12b"
 					(reference "C26")
 					(unit 1)
@@ -2478,7 +2478,7 @@
 			(uuid "ae6af333-dc28-429f-8e09-1ef203394c11")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/0e2f0a53-7bb6-4ddf-ac23-cb9e1b06e12b"
 					(reference "#PWR039")
 					(unit 1)
@@ -2560,7 +2560,7 @@
 			(uuid "5ea87eec-66a0-4967-81c8-c1ea664494ca")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/0e2f0a53-7bb6-4ddf-ac23-cb9e1b06e12b"
 					(reference "C27")
 					(unit 1)
@@ -2638,7 +2638,7 @@
 			(uuid "45615ab4-e2b5-4787-90cd-cacbd7b3efb3")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/0e2f0a53-7bb6-4ddf-ac23-cb9e1b06e12b"
 					(reference "#PWR044")
 					(unit 1)
@@ -2716,7 +2716,7 @@
 			(uuid "7f5ac7e2-b30f-4bfa-a30c-05e300b37f88")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/0e2f0a53-7bb6-4ddf-ac23-cb9e1b06e12b"
 					(reference "#PWR038")
 					(unit 1)

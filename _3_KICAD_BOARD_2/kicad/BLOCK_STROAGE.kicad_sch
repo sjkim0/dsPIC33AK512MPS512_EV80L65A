@@ -1289,7 +1289,7 @@
 			(uuid "a735c178-fe0f-43ae-9d96-b08c1d764a15")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/152ec2d9-8dbd-4d80-83d8-0e67e8f65045"
 					(reference "R21")
 					(unit 1)
@@ -1389,7 +1389,7 @@
 			(uuid "7d0e2be6-a79d-4b3f-8468-bc11b94001ce")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/152ec2d9-8dbd-4d80-83d8-0e67e8f65045"
 					(reference "U4")
 					(unit 1)
@@ -1471,7 +1471,7 @@
 			(uuid "b26d7827-1ce6-4b57-9a0f-9a563c4bcc4a")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/152ec2d9-8dbd-4d80-83d8-0e67e8f65045"
 					(reference "C29")
 					(unit 1)
@@ -1549,7 +1549,7 @@
 			(uuid "90874e19-5b82-469b-92d1-f9ef76ded258")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/152ec2d9-8dbd-4d80-83d8-0e67e8f65045"
 					(reference "#PWR047")
 					(unit 1)
@@ -1631,7 +1631,7 @@
 			(uuid "50c0a8fc-7346-4c70-acbe-b0c354225783")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/152ec2d9-8dbd-4d80-83d8-0e67e8f65045"
 					(reference "R20")
 					(unit 1)
@@ -1709,7 +1709,7 @@
 			(uuid "40ee7817-f9fc-42ed-a47b-d99a74ec3caa")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/152ec2d9-8dbd-4d80-83d8-0e67e8f65045"
 					(reference "#PWR046")
 					(unit 1)
@@ -1787,7 +1787,7 @@
 			(uuid "b178133b-7711-4088-8f95-a53e2b70a545")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/152ec2d9-8dbd-4d80-83d8-0e67e8f65045"
 					(reference "#PWR045")
 					(unit 1)
@@ -1865,7 +1865,7 @@
 			(uuid "6a94d90a-daa0-48f2-bcdf-bbab34bc15e1")
 		)
 		(instances
-			(project "dspic33ak512mps512_baseboard"
+			(project "kicad"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/152ec2d9-8dbd-4d80-83d8-0e67e8f65045"
 					(reference "#PWR048")
 					(unit 1)
