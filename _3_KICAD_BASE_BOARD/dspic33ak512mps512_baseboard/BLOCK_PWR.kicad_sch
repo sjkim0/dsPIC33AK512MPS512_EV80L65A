@@ -170,8 +170,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
+			(property "Reference" "U2"
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -181,17 +181,16 @@
 				)
 			)
 			(property "Value" "AZ1117-3.3"
-				(at 0 3.175 0)
+				(at 0 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "AZ1117H-3.3TRE1:SOT230P700X180-4N"
 				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -308,6 +307,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 -3.81 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1075,13 +1092,13 @@
 		(uuid "04063f83-a69d-4651-9d44-46ee46c50045")
 	)
 	(junction
-		(at 140.97 88.9)
+		(at 146.05 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1e3877e5-8ac3-4628-84a6-7e49860aecfa")
 	)
 	(junction
-		(at 140.97 73.66)
+		(at 146.05 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6b6267d0-560b-4924-a064-41427e77169a")
@@ -1102,11 +1119,17 @@
 		(at 130.81 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
+		(uuid "ecaebf3a-2c50-4dc2-9cf6-e9e59f21ebe1")
+	)
+	(junction
+		(at 135.89 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
 		(uuid "f8340977-5990-4f3a-aff3-6074130fcf51")
 	)
 	(wire
 		(pts
-			(xy 130.81 73.66) (xy 140.97 73.66)
+			(xy 135.89 73.66) (xy 146.05 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1126,7 +1149,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 88.9) (xy 140.97 90.17)
+			(xy 146.05 88.9) (xy 146.05 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1136,13 +1159,23 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 80.01) (xy 140.97 88.9)
+			(xy 146.05 80.01) (xy 146.05 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "65bd70a8-b261-40ba-9531-67d3ba5298f9")
+	)
+	(wire
+		(pts
+			(xy 130.81 73.66) (xy 128.27 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d69d4cd-cb66-4f0c-a75d-a1b3b09910d0")
 	)
 	(wire
 		(pts
@@ -1156,7 +1189,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 80.01) (xy 130.81 88.9)
+			(xy 135.89 80.01) (xy 135.89 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1196,6 +1229,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 77.47) (xy 130.81 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8fe1c4d-ff6d-45b4-829f-7d52848abf61")
+	)
+	(wire
+		(pts
 			(xy 106.68 73.66) (xy 96.52 73.66)
 		)
 		(stroke
@@ -1206,7 +1249,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 73.66) (xy 128.27 73.66)
+			(xy 135.89 73.66) (xy 130.81 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1226,7 +1269,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 69.85) (xy 140.97 73.66)
+			(xy 146.05 69.85) (xy 146.05 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1246,7 +1289,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 74.93) (xy 130.81 73.66)
+			(xy 135.89 74.93) (xy 135.89 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1256,7 +1299,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 88.9) (xy 140.97 88.9)
+			(xy 135.89 88.9) (xy 146.05 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1276,7 +1319,17 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 73.66) (xy 140.97 74.93)
+			(xy 130.81 77.47) (xy 130.81 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e75e472f-af34-477e-bd4e-a2e262652646")
+	)
+	(wire
+		(pts
+			(xy 146.05 73.66) (xy 146.05 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1305,7 +1358,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "02a6a791-3643-4c9e-9512-728f6516fe59")
-		(property "Reference" "C3"
+		(property "Reference" "C22"
 			(at 97.79 82.804 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1539,7 +1592,7 @@
 		(instances
 			(project "dspic33ak512mps512_baseboard"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/82b2ddde-1036-4aa9-ad5b-b1f590151d1d"
-					(reference "C3")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -1557,7 +1610,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "142cd1c8-1974-4b13-b60a-4cd110f4b784")
-		(property "Reference" "C4"
+		(property "Reference" "C23"
 			(at 109.22 77.4762 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1579,7 +1632,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 106.68 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -1621,7 +1674,7 @@
 		(instances
 			(project "dspic33ak512mps512_baseboard"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/82b2ddde-1036-4aa9-ad5b-b1f590151d1d"
-					(reference "C4")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -1639,7 +1692,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3dbbbcf1-50f5-4da1-b1f0-54f6b9d2dd07")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR033"
 			(at 96.52 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -1699,7 +1752,7 @@
 		(instances
 			(project "dspic33ak512mps512_baseboard"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/82b2ddde-1036-4aa9-ad5b-b1f590151d1d"
-					(reference "#PWR010")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -1707,7 +1760,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 130.81 77.47 0)
+		(at 135.89 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1717,8 +1770,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51b92289-70f1-437b-aa5b-dbc9d18cefb1")
-		(property "Reference" "C5"
-			(at 133.35 76.2062 0)
+		(property "Reference" "C24"
+			(at 138.43 76.2062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1729,7 +1782,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 133.35 78.7462 0)
+			(at 138.43 78.7462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1739,8 +1792,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 130.81 77.47 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 135.89 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1751,7 +1804,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 77.47 0)
+			(at 135.89 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1762,7 +1815,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 130.81 77.47 0)
+			(at 135.89 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1781,7 +1834,7 @@
 		(instances
 			(project "dspic33ak512mps512_baseboard"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/82b2ddde-1036-4aa9-ad5b-b1f590151d1d"
-					(reference "C5")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -1799,7 +1852,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "609509f3-7be9-4196-afee-350a8ad22f1f")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR036"
 			(at 96.52 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1859,7 +1912,7 @@
 		(instances
 			(project "dspic33ak512mps512_baseboard"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/82b2ddde-1036-4aa9-ad5b-b1f590151d1d"
-					(reference "#PWR02")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -1877,7 +1930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b701a6a-ca13-4596-8516-cff21e0ab5f3")
-		(property "Reference" "U4"
+		(property "Reference" "U2"
 			(at 120.65 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1897,7 +1950,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "AZ1117H-3.3TRE1:SOT230P700X180-4N"
 			(at 120.65 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -1940,10 +1993,13 @@
 		(pin "1"
 			(uuid "bad92867-67e3-45be-aaea-8082ce6396ae")
 		)
+		(pin "4"
+			(uuid "83e725bb-9568-45d5-b4af-74c102ac4af0")
+		)
 		(instances
 			(project "dspic33ak512mps512_baseboard"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/82b2ddde-1036-4aa9-ad5b-b1f590151d1d"
-					(reference "U4")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -1951,7 +2007,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 140.97 77.47 0)
+		(at 146.05 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1961,8 +2017,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9bd31986-e2d6-481f-9b10-07ba111e9780")
-		(property "Reference" "C6"
-			(at 143.51 76.2062 0)
+		(property "Reference" "C25"
+			(at 148.59 76.2062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1973,7 +2029,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 143.51 78.7462 0)
+			(at 148.59 78.7462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1983,8 +2039,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 140.97 77.47 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 146.05 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1995,7 +2051,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 77.47 0)
+			(at 146.05 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2006,7 +2062,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 140.97 77.47 0)
+			(at 146.05 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2025,7 +2081,7 @@
 		(instances
 			(project "dspic33ak512mps512_baseboard"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/82b2ddde-1036-4aa9-ad5b-b1f590151d1d"
-					(reference "C6")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -2033,7 +2089,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 140.97 69.85 0)
+		(at 146.05 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2043,8 +2099,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4c5ece8-71d2-4470-8054-ff96749dc9c5")
-		(property "Reference" "#PWR01"
-			(at 140.97 73.66 0)
+		(property "Reference" "#PWR037"
+			(at 146.05 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2055,7 +2111,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 140.97 64.77 0)
+			(at 146.05 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2065,7 +2121,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 69.85 0)
+			(at 146.05 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2076,7 +2132,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 69.85 0)
+			(at 146.05 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2087,7 +2143,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 140.97 69.85 0)
+			(at 146.05 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2103,7 +2159,7 @@
 		(instances
 			(project "dspic33ak512mps512_baseboard"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/82b2ddde-1036-4aa9-ad5b-b1f590151d1d"
-					(reference "#PWR01")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -2121,7 +2177,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dcdb6e3f-1380-4faa-9dc5-0f1b92b82799")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR034"
 			(at 120.65 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2181,7 +2237,7 @@
 		(instances
 			(project "dspic33ak512mps512_baseboard"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/82b2ddde-1036-4aa9-ad5b-b1f590151d1d"
-					(reference "#PWR04")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -2189,7 +2245,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 140.97 90.17 0)
+		(at 146.05 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2199,8 +2255,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec4cce96-fe8c-4972-b517-8ded6bb5beb1")
-		(property "Reference" "#PWR011"
-			(at 140.97 96.52 0)
+		(property "Reference" "#PWR035"
+			(at 146.05 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2211,7 +2267,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 140.97 95.25 0)
+			(at 146.05 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2221,7 +2277,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 90.17 0)
+			(at 146.05 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2232,7 +2288,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 90.17 0)
+			(at 146.05 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2243,7 +2299,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 140.97 90.17 0)
+			(at 146.05 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2259,7 +2315,7 @@
 		(instances
 			(project "dspic33ak512mps512_baseboard"
 				(path "/e24cf9e2-928b-48e3-96fe-45cdccce1592/82b2ddde-1036-4aa9-ad5b-b1f590151d1d"
-					(reference "#PWR011")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
