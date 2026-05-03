@@ -1409,7 +1409,7 @@
 		(uuid "40b990d7-c875-4ef9-9e62-5e7db5d012a5")
 	)
 	(bus_entry
-		(at 143.51 50.8)
+		(at 151.13 50.8)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -1490,7 +1490,7 @@
 		(uuid "69d1fb17-980c-4d16-bafc-567c0bbd0044")
 	)
 	(bus_entry
-		(at 143.51 45.72)
+		(at 151.13 45.72)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -1524,6 +1524,15 @@
 			(type default)
 		)
 		(uuid "755d4a55-cccc-490e-a8b7-716182c0a4a7")
+	)
+	(bus_entry
+		(at 151.13 53.34)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7582f6bc-93ca-428b-a747-80e35da048a8")
 	)
 	(bus_entry
 		(at 78.74 163.83)
@@ -1571,7 +1580,7 @@
 		(uuid "81c683fd-4475-439f-b7bb-1db142bb7bf2")
 	)
 	(bus_entry
-		(at 143.51 48.26)
+		(at 151.13 48.26)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -1706,6 +1715,15 @@
 		(uuid "c0320fcf-7059-4aeb-91c4-3a739200b0c2")
 	)
 	(bus_entry
+		(at 151.13 55.88)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c18c5753-6fde-4f26-9b09-c05fcda25a60")
+	)
+	(bus_entry
 		(at 138.43 130.81)
 		(size -2.54 2.54)
 		(stroke
@@ -1715,7 +1733,7 @@
 		(uuid "c431d7e2-a5ef-4e61-bd1e-96f77467ed96")
 	)
 	(bus_entry
-		(at 143.51 43.18)
+		(at 151.13 43.18)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2155,6 +2173,16 @@
 		)
 		(uuid "1e5a6f95-7bf8-4743-be9e-d202451dfc60")
 	)
+	(bus
+		(pts
+			(xy 151.13 53.34) (xy 151.13 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ef14f47-2c32-4acd-98ad-14acb15ce885")
+	)
 	(wire
 		(pts
 			(xy 81.28 125.73) (xy 95.25 125.73)
@@ -2194,6 +2222,16 @@
 			(type default)
 		)
 		(uuid "29e854c9-339b-4fc6-a4ce-32b2a9649df3")
+	)
+	(bus
+		(pts
+			(xy 151.13 50.8) (xy 151.13 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2af0e8f8-e125-4e5b-a4de-1ec6aa36dda0")
 	)
 	(bus
 		(pts
@@ -2317,7 +2355,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 53.34) (xy 140.97 53.34)
+			(xy 120.65 53.34) (xy 148.59 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2417,7 +2455,7 @@
 	)
 	(bus
 		(pts
-			(xy 143.51 48.26) (xy 143.51 50.8)
+			(xy 151.13 48.26) (xy 151.13 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2667,7 +2705,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 48.26) (xy 140.97 48.26)
+			(xy 120.65 48.26) (xy 148.59 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2687,7 +2725,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 45.72) (xy 140.97 45.72)
+			(xy 120.65 45.72) (xy 148.59 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2774,6 +2812,16 @@
 			(type default)
 		)
 		(uuid "707f46b8-a0e5-4f3a-a8b5-78c935ade063")
+	)
+	(wire
+		(pts
+			(xy 120.65 58.42) (xy 148.59 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70d9790c-e9ab-46dd-a1cd-693e1d499d89")
 	)
 	(wire
 		(pts
@@ -3077,6 +3125,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 55.88) (xy 148.59 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a8d93ac-bede-4b72-a2fb-410ad59ae29c")
+	)
+	(wire
+		(pts
 			(xy 81.28 101.6) (xy 95.25 101.6)
 		)
 		(stroke
@@ -3207,7 +3265,7 @@
 	)
 	(bus
 		(pts
-			(xy 143.51 43.18) (xy 143.51 45.72)
+			(xy 151.13 43.18) (xy 151.13 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3497,7 +3555,7 @@
 	)
 	(bus
 		(pts
-			(xy 143.51 45.72) (xy 143.51 46.99)
+			(xy 151.13 45.72) (xy 151.13 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3727,7 +3785,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 50.8) (xy 140.97 50.8)
+			(xy 120.65 50.8) (xy 148.59 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3784,6 +3842,16 @@
 			(type default)
 		)
 		(uuid "fe928a7d-5475-486e-a339-9842340c2cf4")
+	)
+	(label "DEBUG_BUS.MCLR"
+		(at 125.73 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "039a9877-7000-4977-b213-43fe55573dcd")
 	)
 	(label "DIM_BUS.IO13"
 		(at 135.89 93.98 180)
@@ -4445,6 +4513,16 @@
 		)
 		(uuid "e28b5379-327c-4cf3-a95e-5325a950df0c")
 	)
+	(label "DEBUG_BUS.BOARD_VDD"
+		(at 125.73 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7b234ea-ce26-453d-8ff2-d8217e21d934")
+	)
 	(label "DIM_BUS.IO61"
 		(at 140.97 119.38 0)
 		(effects
@@ -4537,7 +4615,7 @@
 	)
 	(hierarchical_label "UART_BUS{UART}"
 		(shape input)
-		(at 143.51 43.18 0)
+		(at 151.13 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4581,7 +4659,7 @@
 	)
 	(hierarchical_label "DEBUG_BUS{DEBUG}"
 		(shape input)
-		(at 143.51 48.26 0)
+		(at 151.13 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)

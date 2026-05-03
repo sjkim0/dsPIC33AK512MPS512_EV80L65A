@@ -6,38 +6,38 @@
 	(paper "A4")
 	(lib_symbols)
 	(junction
-		(at 88.9 54.61)
+		(at 88.9 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "638c00a7-8bbf-4a94-8fac-be98f1b2ce29")
 	)
 	(junction
-		(at 72.39 116.84)
+		(at 82.55 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "66a5ead3-0aa7-4622-9cf6-0e0ba05c3dd2")
 	)
 	(junction
-		(at 67.31 111.76)
+		(at 77.47 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9c88552e-4b90-413e-b596-92d2f90c0f54")
 	)
 	(junction
-		(at 87.63 57.15)
+		(at 87.63 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c472be42-27a8-4585-b608-ebed9fc375a3")
 	)
 	(junction
-		(at 69.85 114.3)
+		(at 80.01 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dab8dfbf-d3cd-49ba-9ef3-0b24aa1a6090")
 	)
 	(bus
 		(pts
-			(xy 67.31 119.38) (xy 67.31 111.76)
+			(xy 77.47 119.38) (xy 77.47 111.76)
 		)
 		(stroke
 			(width 0)
@@ -47,7 +47,7 @@
 	)
 	(bus
 		(pts
-			(xy 69.85 114.3) (xy 118.11 114.3)
+			(xy 80.01 114.3) (xy 127 114.3)
 		)
 		(stroke
 			(width 0)
@@ -57,7 +57,7 @@
 	)
 	(bus
 		(pts
-			(xy 120.65 80.01) (xy 120.65 116.84)
+			(xy 129.54 80.01) (xy 129.54 116.84)
 		)
 		(stroke
 			(width 0)
@@ -67,7 +67,7 @@
 	)
 	(bus
 		(pts
-			(xy 149.86 80.01) (xy 149.86 119.38)
+			(xy 171.45 80.01) (xy 171.45 119.38)
 		)
 		(stroke
 			(width 0)
@@ -77,7 +77,7 @@
 	)
 	(bus
 		(pts
-			(xy 69.85 114.3) (xy 69.85 119.38)
+			(xy 80.01 114.3) (xy 80.01 119.38)
 		)
 		(stroke
 			(width 0)
@@ -87,7 +87,7 @@
 	)
 	(bus
 		(pts
-			(xy 72.39 116.84) (xy 72.39 119.38)
+			(xy 82.55 116.84) (xy 82.55 119.38)
 		)
 		(stroke
 			(width 0)
@@ -97,7 +97,7 @@
 	)
 	(bus
 		(pts
-			(xy 105.41 111.76) (xy 67.31 111.76)
+			(xy 124.46 111.76) (xy 77.47 111.76)
 		)
 		(stroke
 			(width 0)
@@ -107,7 +107,7 @@
 	)
 	(bus
 		(pts
-			(xy 69.85 80.01) (xy 69.85 114.3)
+			(xy 80.01 80.01) (xy 80.01 114.3)
 		)
 		(stroke
 			(width 0)
@@ -117,7 +117,7 @@
 	)
 	(bus
 		(pts
-			(xy 85.09 52.07) (xy 91.44 52.07)
+			(xy 85.09 45.72) (xy 91.44 45.72)
 		)
 		(stroke
 			(width 0)
@@ -127,7 +127,7 @@
 	)
 	(bus
 		(pts
-			(xy 87.63 87.63) (xy 196.85 87.63)
+			(xy 87.63 86.36) (xy 218.44 86.36)
 		)
 		(stroke
 			(width 0)
@@ -137,7 +137,7 @@
 	)
 	(bus
 		(pts
-			(xy 85.09 57.15) (xy 87.63 57.15)
+			(xy 85.09 50.8) (xy 87.63 50.8)
 		)
 		(stroke
 			(width 0)
@@ -147,7 +147,7 @@
 	)
 	(bus
 		(pts
-			(xy 87.63 57.15) (xy 91.44 57.15)
+			(xy 87.63 50.8) (xy 91.44 50.8)
 		)
 		(stroke
 			(width 0)
@@ -157,7 +157,7 @@
 	)
 	(bus
 		(pts
-			(xy 120.65 116.84) (xy 72.39 116.84)
+			(xy 129.54 116.84) (xy 82.55 116.84)
 		)
 		(stroke
 			(width 0)
@@ -167,7 +167,7 @@
 	)
 	(bus
 		(pts
-			(xy 64.77 80.01) (xy 64.77 119.38)
+			(xy 74.93 80.01) (xy 74.93 119.38)
 		)
 		(stroke
 			(width 0)
@@ -177,7 +177,7 @@
 	)
 	(bus
 		(pts
-			(xy 88.9 54.61) (xy 91.44 54.61)
+			(xy 88.9 48.26) (xy 91.44 48.26)
 		)
 		(stroke
 			(width 0)
@@ -187,7 +187,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 80.01) (xy 196.85 87.63)
+			(xy 218.44 80.01) (xy 218.44 86.36)
 		)
 		(stroke
 			(width 0)
@@ -197,7 +197,7 @@
 	)
 	(bus
 		(pts
-			(xy 85.09 54.61) (xy 88.9 54.61)
+			(xy 85.09 48.26) (xy 88.9 48.26)
 		)
 		(stroke
 			(width 0)
@@ -207,7 +207,7 @@
 	)
 	(bus
 		(pts
-			(xy 87.63 57.15) (xy 87.63 87.63)
+			(xy 87.63 50.8) (xy 87.63 86.36)
 		)
 		(stroke
 			(width 0)
@@ -217,7 +217,7 @@
 	)
 	(bus
 		(pts
-			(xy 88.9 54.61) (xy 88.9 86.36)
+			(xy 88.9 48.26) (xy 88.9 85.09)
 		)
 		(stroke
 			(width 0)
@@ -227,7 +227,7 @@
 	)
 	(bus
 		(pts
-			(xy 72.39 80.01) (xy 72.39 116.84)
+			(xy 82.55 80.01) (xy 82.55 116.84)
 		)
 		(stroke
 			(width 0)
@@ -237,7 +237,7 @@
 	)
 	(bus
 		(pts
-			(xy 88.9 86.36) (xy 152.4 86.36)
+			(xy 88.9 85.09) (xy 173.99 85.09)
 		)
 		(stroke
 			(width 0)
@@ -247,7 +247,7 @@
 	)
 	(bus
 		(pts
-			(xy 152.4 86.36) (xy 152.4 80.01)
+			(xy 173.99 85.09) (xy 173.99 80.01)
 		)
 		(stroke
 			(width 0)
@@ -257,7 +257,7 @@
 	)
 	(bus
 		(pts
-			(xy 67.31 111.76) (xy 67.31 80.01)
+			(xy 77.47 111.76) (xy 77.47 80.01)
 		)
 		(stroke
 			(width 0)
@@ -267,7 +267,7 @@
 	)
 	(bus
 		(pts
-			(xy 118.11 114.3) (xy 118.11 80.01)
+			(xy 127 114.3) (xy 127 80.01)
 		)
 		(stroke
 			(width 0)
@@ -277,7 +277,7 @@
 	)
 	(bus
 		(pts
-			(xy 105.41 80.01) (xy 105.41 111.76)
+			(xy 124.46 80.01) (xy 124.46 111.76)
 		)
 		(stroke
 			(width 0)
@@ -320,7 +320,7 @@
 			)
 		)
 		(pin "DAC_BUS{DAC}" input
-			(at 149.86 80.01 270)
+			(at 171.45 80.01 270)
 			(uuid "85eae910-9872-4496-a9ec-7fe52adf4a26")
 			(effects
 				(font
@@ -330,7 +330,7 @@
 			)
 		)
 		(pin "SPI_BUS{SPI}" input
-			(at 152.4 80.01 270)
+			(at 173.99 80.01 270)
 			(uuid "6b813e17-6131-47b0-8ab6-1034aa578573")
 			(effects
 				(font
@@ -382,7 +382,7 @@
 			)
 		)
 		(pin "ADC_BUS{ADC}" input
-			(at 67.31 80.01 270)
+			(at 77.47 80.01 270)
 			(uuid "6481a23d-fe68-417b-a4f6-0c19090fc03f")
 			(effects
 				(font
@@ -392,7 +392,7 @@
 			)
 		)
 		(pin "DEBUG_BUS{DEBUG}" input
-			(at 72.39 80.01 270)
+			(at 82.55 80.01 270)
 			(uuid "22e1df90-2d3c-417d-84ce-78671efbebf0")
 			(effects
 				(font
@@ -402,7 +402,7 @@
 			)
 		)
 		(pin "DIM_BUS{DIM}" input
-			(at 64.77 80.01 270)
+			(at 74.93 80.01 270)
 			(uuid "b25239ca-8798-47bd-9bb7-bf0992d6f7f2")
 			(effects
 				(font
@@ -412,7 +412,7 @@
 			)
 		)
 		(pin "I2C_BUS{I2C}" input
-			(at 85.09 57.15 0)
+			(at 85.09 50.8 0)
 			(uuid "5fb6e13d-2872-42b6-abe7-75326224dc95")
 			(effects
 				(font
@@ -422,7 +422,7 @@
 			)
 		)
 		(pin "SPI_BUS{SPI}" input
-			(at 85.09 54.61 0)
+			(at 85.09 48.26 0)
 			(uuid "9b7f6550-dcff-43c9-bc1e-f65cc7f2de1d")
 			(effects
 				(font
@@ -432,7 +432,7 @@
 			)
 		)
 		(pin "SYS_BUS{SYS}" input
-			(at 85.09 52.07 0)
+			(at 85.09 45.72 0)
 			(uuid "ee6dbdea-7cc2-47d4-9066-adb488318771")
 			(effects
 				(font
@@ -442,7 +442,7 @@
 			)
 		)
 		(pin "UART_BUS{UART}" input
-			(at 69.85 80.01 270)
+			(at 80.01 80.01 270)
 			(uuid "a8f4ba57-0226-48a7-a3c6-84359da8464c")
 			(effects
 				(font
@@ -536,7 +536,7 @@
 			)
 		)
 		(pin "I2C_BUS{I2C}" input
-			(at 196.85 80.01 270)
+			(at 218.44 80.01 270)
 			(uuid "966b3e36-273f-460b-b3b2-e65b1822de66")
 			(effects
 				(font
@@ -588,7 +588,7 @@
 			)
 		)
 		(pin "ADC_BUS{ADC}" input
-			(at 67.31 119.38 90)
+			(at 77.47 119.38 90)
 			(uuid "407278c0-745a-43fb-b640-b048f16a4b77")
 			(effects
 				(font
@@ -598,7 +598,7 @@
 			)
 		)
 		(pin "DAC_BUS{DAC}" input
-			(at 149.86 119.38 90)
+			(at 171.45 119.38 90)
 			(uuid "4f373fa7-1a4c-4fcb-8517-ee9f2fb81e18")
 			(effects
 				(font
@@ -608,7 +608,7 @@
 			)
 		)
 		(pin "DEBUG_BUS{DEBUG}" input
-			(at 72.39 119.38 90)
+			(at 82.55 119.38 90)
 			(uuid "7e194705-3dfa-4af7-82b5-a6ca2e2fbac4")
 			(effects
 				(font
@@ -618,7 +618,7 @@
 			)
 		)
 		(pin "DIM_BUS{DIM}" input
-			(at 64.77 119.38 90)
+			(at 74.93 119.38 90)
 			(uuid "c7950ce5-a443-41ea-b553-38daf6348d20")
 			(effects
 				(font
@@ -628,7 +628,7 @@
 			)
 		)
 		(pin "UART_BUS{UART}" input
-			(at 69.85 119.38 90)
+			(at 80.01 119.38 90)
 			(uuid "a8b1a899-becc-479f-bee7-cbf4996bcee8")
 			(effects
 				(font
@@ -680,7 +680,7 @@
 			)
 		)
 		(pin "ADC_BUS{ADC}" input
-			(at 105.41 80.01 270)
+			(at 124.46 80.01 270)
 			(uuid "a9b3cfef-9505-438b-acef-1c2690b7fc5b")
 			(effects
 				(font
@@ -690,7 +690,7 @@
 			)
 		)
 		(pin "DEBUG_BUS{DEBUG}" input
-			(at 120.65 80.01 270)
+			(at 129.54 80.01 270)
 			(uuid "3f1954e5-af78-4c8b-9521-5b2eed2f30ba")
 			(effects
 				(font
@@ -700,7 +700,7 @@
 			)
 		)
 		(pin "I2C_BUS{I2C}" input
-			(at 91.44 57.15 180)
+			(at 91.44 50.8 180)
 			(uuid "d1afa43d-f2db-49da-8a7f-8632827fe216")
 			(effects
 				(font
@@ -710,7 +710,7 @@
 			)
 		)
 		(pin "SPI_BUS{SPI}" input
-			(at 91.44 54.61 180)
+			(at 91.44 48.26 180)
 			(uuid "fb69e9e8-3c32-48d6-af32-6ca75337a8d3")
 			(effects
 				(font
@@ -720,7 +720,7 @@
 			)
 		)
 		(pin "SYS_BUS{SYS}" input
-			(at 91.44 52.07 180)
+			(at 91.44 45.72 180)
 			(uuid "52881814-25cb-478e-8b09-fb7bf6792cc7")
 			(effects
 				(font
@@ -730,7 +730,7 @@
 			)
 		)
 		(pin "UART_BUS{UART}" input
-			(at 118.11 80.01 270)
+			(at 127 80.01 270)
 			(uuid "6dc86606-2a7f-4a72-b3ae-30ecf7707759")
 			(effects
 				(font
