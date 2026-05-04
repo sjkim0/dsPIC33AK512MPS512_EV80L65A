@@ -1,0 +1,504 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "241f5c28-4812-40dd-bd66-e8f529513045")
+	(paper "A4")
+	(lib_symbols)
+	(bus
+		(pts
+			(xy 114.3 119.38) (xy 114.3 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03ef1e65-3f9d-41f7-99d2-f080617232d3")
+	)
+	(bus
+		(pts
+			(xy 219.71 124.46) (xy 116.84 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d6e2a3e-8567-4f19-b3cf-85d706faa153")
+	)
+	(bus
+		(pts
+			(xy 219.71 119.38) (xy 219.71 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "227ef54f-241f-450c-a7e2-b172887b942b")
+	)
+	(bus
+		(pts
+			(xy 114.3 121.92) (xy 177.8 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bcd8efc-1634-49bf-b817-68b3e6a9d988")
+	)
+	(bus
+		(pts
+			(xy 106.68 119.38) (xy 106.68 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e73b489-4fd9-4309-918b-0d83b7ab70d7")
+	)
+	(bus
+		(pts
+			(xy 119.38 119.38) (xy 119.38 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d942993-2f9b-4cb3-82f2-a19896e7412f")
+	)
+	(bus
+		(pts
+			(xy 121.92 119.38) (xy 121.92 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65ff6e83-47bf-4f98-a3ff-ace0407c9b14")
+	)
+	(bus
+		(pts
+			(xy 177.8 121.92) (xy 177.8 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c5360eb-354a-403e-812a-337ed7c39b87")
+	)
+	(bus
+		(pts
+			(xy 217.17 119.38) (xy 217.17 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97aec055-ffde-4463-ac48-83bcc5c59413")
+	)
+	(bus
+		(pts
+			(xy 109.22 119.38) (xy 109.22 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9853e53e-51c0-4ed3-8bd2-044da1cc530e")
+	)
+	(bus
+		(pts
+			(xy 116.84 124.46) (xy 116.84 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1cebc31-2710-4cf3-ae25-3a5b94457a18")
+	)
+	(bus
+		(pts
+			(xy 111.76 119.38) (xy 111.76 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7c18d98-8296-45c7-a8e0-07b8a3999a41")
+	)
+	(sheet
+		(at 80.01 128.27)
+		(size 153.67 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "47a02915-6a97-4974-8832-3d1120523e18")
+		(property "Sheetname" "TERMINAL_SHEET"
+			(at 80.01 127.5584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TERMINAL_SHEET.kicad_sch"
+			(at 80.01 160.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ADC_BUS{ADC}" input
+			(at 106.68 128.27 90)
+			(uuid "60bc9be6-d506-40c9-9e41-dc6a04a14786")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DAC_BUS{DAC}" input
+			(at 217.17 128.27 90)
+			(uuid "3e62778d-93b0-4abb-bbac-8f55d9da4bea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DEBUG_BUS{DEBUG}" input
+			(at 109.22 128.27 90)
+			(uuid "a3a56022-4d86-4f29-8e75-bacb931cce6c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DIM_BUS{DIM}" input
+			(at 111.76 128.27 90)
+			(uuid "030a5d56-698a-477e-8a9e-2809ce4a0dd3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "UART_BUS{UART}" input
+			(at 121.92 128.27 90)
+			(uuid "49543589-65b9-47c5-b18d-239404dbaae3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SYS_BUS{SYS}" input
+			(at 119.38 128.27 90)
+			(uuid "ca96aac6-0500-4ca1-9cda-9ccb7d6f2785")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "dspic33ak512"
+				(path "/241f5c28-4812-40dd-bd66-e8f529513045"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 81.28 41.91)
+		(size 152.4 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "52209dbf-5a51-4a2b-9153-ff8010992679")
+		(property "Sheetname" "PWR_SHEET"
+			(at 81.28 41.1984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PWR_SHEET.kicad_sch"
+			(at 81.28 71.7046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "dspic33ak512"
+				(path "/241f5c28-4812-40dd-bd66-e8f529513045"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 130.81 83.82)
+		(size 50.8 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "59f60f22-dec2-4f4a-b21b-5b04c474ceb6")
+		(property "Sheetname" "STORAGE_SHEET"
+			(at 130.81 83.1084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "STORAGE_SHEET.kicad_sch"
+			(at 130.81 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C_BUS{I2C}" input
+			(at 177.8 119.38 270)
+			(uuid "6a0d7ba8-8dea-426e-92a7-4c4954958913")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "dspic33ak512"
+				(path "/241f5c28-4812-40dd-bd66-e8f529513045"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 81.28 83.82)
+		(size 45.72 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "69a2d87e-a0e3-4a80-b688-8016e1858bb4")
+		(property "Sheetname" "DIM_SHEET"
+			(at 81.28 83.1084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DIM_SHEET.kicad_sch"
+			(at 81.28 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ADC_BUS{ADC}" input
+			(at 106.68 119.38 270)
+			(uuid "09c778a6-bb25-4e95-b0ab-4016f679558a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DEBUG_BUS{DEBUG}" input
+			(at 109.22 119.38 270)
+			(uuid "d3722dbc-fbb2-4d77-b5dc-9286c3518a3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIM_BUS{DIM}" input
+			(at 111.76 119.38 270)
+			(uuid "d1f7e160-61cf-48fc-adf0-4b3edbc23094")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_BUS{I2C}" input
+			(at 114.3 119.38 270)
+			(uuid "20b1eba2-52b1-4d1a-9021-2f91ffa6c8b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_BUS{SPI}" input
+			(at 116.84 119.38 270)
+			(uuid "8086cb78-6af1-4697-b97d-b5870b7f7402")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SYS_BUS{SYS}" input
+			(at 119.38 119.38 270)
+			(uuid "48d8e24b-11fb-4c5a-ada8-6d53277ff268")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART_BUS{UART}" input
+			(at 121.92 119.38 270)
+			(uuid "0bd0fabf-cfe8-4699-a366-892c08785949")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "dspic33ak512"
+				(path "/241f5c28-4812-40dd-bd66-e8f529513045"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 185.42 83.82)
+		(size 48.26 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9ba5dd50-77a8-49cc-943f-6baccba7204b")
+		(property "Sheetname" "SIGNAL_IO_SHEET"
+			(at 185.42 83.1084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SIGNAL_IO_SHEET.kicad_sch"
+			(at 185.42 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DAC_BUS{DAC}" input
+			(at 217.17 119.38 270)
+			(uuid "2c3a595c-3749-4065-acae-39d980350752")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_BUS{SPI}" input
+			(at 219.71 119.38 270)
+			(uuid "1c7ba7d7-5de4-4167-81af-18077a8837fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "dspic33ak512"
+				(path "/241f5c28-4812-40dd-bd66-e8f529513045"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

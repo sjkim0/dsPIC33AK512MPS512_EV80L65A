@@ -2,7 +2,7 @@
   "board": {
     "active_layer": 0,
     "active_layer_preset": "",
-    "auto_track_width": true,
+    "auto_track_width": false,
     "hidden_netclasses": [],
     "hidden_nets": [],
     "high_contrast_mode": 0,
@@ -51,7 +51,7 @@
       "shapes"
     ],
     "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
-    "zone_display_mode": 1
+    "zone_display_mode": 0
   },
   "git": {
     "integration_disabled": false,
@@ -60,7 +60,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "_3_KICAD_BOARD_VER_9.kicad_prl",
+    "filename": "dspic33ak512.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
