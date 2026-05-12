@@ -1489,7 +1489,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C114762"
+		(property "LCSC Part #" "C4190"
 			(at 160.02 81.28 0)
 			(effects
 				(font
@@ -1634,7 +1634,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C114762"
+		(property "LCSC Part #" "C4190"
 			(at 149.86 81.28 0)
 			(effects
 				(font

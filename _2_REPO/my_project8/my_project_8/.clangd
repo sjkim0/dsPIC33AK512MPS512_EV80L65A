@@ -1,0 +1,11 @@
+CompileFlags:
+  CompilationDatabase: _build/my_project_8/default
+  Compiler: c:/Program Files/Microchip/xc-dsc/v3.31/bin/xc-dsc-gcc.exe
+  Add:
+    - -DXPRJ_default=default
+    - -D__MPLAB_BUILD=1
+    - -IC:/Users/ksj10/Desktop/_0_programs/_3_GIT_REPO/__PRIVATE/_37_MPLAB_VSCODE/_2_REPO/my_project8/my_project_8/My_MCC_Config/mcc
+    - -IC:/Users/ksj10/Desktop/_0_programs/_3_GIT_REPO/__PRIVATE/_37_MPLAB_VSCODE/_2_REPO/my_project8/my_project_8/My_MCC_Config/mcc/user_src
+    - -IC:/Users/ksj10/Desktop/_0_programs/_3_GIT_REPO/__PRIVATE/_37_MPLAB_VSCODE/_2_REPO/my_project8/my_project_8/My_MCC_Config/mcc/mcc_generated_files
+Index:
+  Background: Build

@@ -22,11 +22,13 @@
 /*
     Main application
 */
+#include "user_src/ap.h"
+
 
 int main(void)
 {
     SYSTEM_Initialize();
-
+    
     while(1)
     {
     }    

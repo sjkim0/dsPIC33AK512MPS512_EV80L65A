@@ -1,6 +1,7 @@
 {
-    "hashFileVersion": "1.0.0",
-    "projectFileHash": "989a84aad7cd0205a531c437c850fc9b6bd42fda2bf136395eee5209f6fe2214",
-    "cmakeFilesHash": "65970893276f2c86a6879c03740f33fba136f83600f62f9ccdee845ea4b0a0c6",
-    "cmakerVersion": "4.2.1"
+    "hashFileVersion": "1.1.0",
+    "projectFileHash": "9a10e8f20cb9e1cd5652a3f1db32782ef5400dbbd126e7c3dfca45f7b78f829f",
+    "cmakeFilesHash": "5311bd966b3e0e77e8ea9855a214211b525e3b6d47e366546f5b4950bb28a063",
+    "cmakerVersion": "4.2.2",
+    "workspacePath": "c:/users/ksj10/desktop/_0_programs/_3_git_repo/__private/_37_mplab_vscode/_2_repo/my_project8/my_project_8"
 }
