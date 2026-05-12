@@ -56,156 +56,156 @@
 // Section: Device Pin Macros
 /**
  * @ingroup  pinsdriver
- * @brief    Sets the RC8 GPIO Pin which has a custom name of IO_RC8 to High
+ * @brief    Sets the RC8 GPIO Pin which has a custom name of BAND_SELECT to High
  * @pre      The RC8 must be set as Output Pin             
  * @param    none
  * @return   none  
  */
-#define IO_RC8_SetHigh()          (_LATC8 = 1)
+#define BAND_SELECT_SetHigh()          (_LATC8 = 1)
 
 /**
  * @ingroup  pinsdriver
- * @brief    Sets the RC8 GPIO Pin which has a custom name of IO_RC8 to Low
+ * @brief    Sets the RC8 GPIO Pin which has a custom name of BAND_SELECT to Low
  * @pre      The RC8 must be set as Output Pin
  * @param    none
  * @return   none  
  */
-#define IO_RC8_SetLow()           (_LATC8 = 0)
+#define BAND_SELECT_SetLow()           (_LATC8 = 0)
 
 /**
  * @ingroup  pinsdriver
- * @brief    Toggles the RC8 GPIO Pin which has a custom name of IO_RC8
+ * @brief    Toggles the RC8 GPIO Pin which has a custom name of BAND_SELECT
  * @pre      The RC8 must be set as Output Pin
  * @param    none
  * @return   none  
  */
-#define IO_RC8_Toggle()           (_LATC8 ^= 1)
+#define BAND_SELECT_Toggle()           (_LATC8 ^= 1)
 
 /**
  * @ingroup  pinsdriver
- * @brief    Reads the value of the RC8 GPIO Pin which has a custom name of IO_RC8
+ * @brief    Reads the value of the RC8 GPIO Pin which has a custom name of BAND_SELECT
  * @param    none
  * @return   none  
  */
-#define IO_RC8_GetValue()         _RC8
+#define BAND_SELECT_GetValue()         _RC8
 
 /**
  * @ingroup  pinsdriver
- * @brief    Configures the RC8 GPIO Pin which has a custom name of IO_RC8 as Input
+ * @brief    Configures the RC8 GPIO Pin which has a custom name of BAND_SELECT as Input
  * @param    none
  * @return   none  
  */
-#define IO_RC8_SetDigitalInput()  (_TRISC8 = 1)
+#define BAND_SELECT_SetDigitalInput()  (_TRISC8 = 1)
 
 /**
  * @ingroup  pinsdriver
- * @brief    Configures the RC8 GPIO Pin which has a custom name of IO_RC8 as Output
+ * @brief    Configures the RC8 GPIO Pin which has a custom name of BAND_SELECT as Output
  * @param    none
  * @return   none  
  */
-#define IO_RC8_SetDigitalOutput() (_TRISC8 = 0)
+#define BAND_SELECT_SetDigitalOutput() (_TRISC8 = 0)
 
 /**
  * @ingroup  pinsdriver
- * @brief    Sets the RC9 GPIO Pin which has a custom name of IO_RC9 to High
+ * @brief    Sets the RC9 GPIO Pin which has a custom name of SPI_SS to High
  * @pre      The RC9 must be set as Output Pin             
  * @param    none
  * @return   none  
  */
-#define IO_RC9_SetHigh()          (_LATC9 = 1)
+#define SPI_SS_SetHigh()          (_LATC9 = 1)
 
 /**
  * @ingroup  pinsdriver
- * @brief    Sets the RC9 GPIO Pin which has a custom name of IO_RC9 to Low
+ * @brief    Sets the RC9 GPIO Pin which has a custom name of SPI_SS to Low
  * @pre      The RC9 must be set as Output Pin
  * @param    none
  * @return   none  
  */
-#define IO_RC9_SetLow()           (_LATC9 = 0)
+#define SPI_SS_SetLow()           (_LATC9 = 0)
 
 /**
  * @ingroup  pinsdriver
- * @brief    Toggles the RC9 GPIO Pin which has a custom name of IO_RC9
+ * @brief    Toggles the RC9 GPIO Pin which has a custom name of SPI_SS
  * @pre      The RC9 must be set as Output Pin
  * @param    none
  * @return   none  
  */
-#define IO_RC9_Toggle()           (_LATC9 ^= 1)
+#define SPI_SS_Toggle()           (_LATC9 ^= 1)
 
 /**
  * @ingroup  pinsdriver
- * @brief    Reads the value of the RC9 GPIO Pin which has a custom name of IO_RC9
+ * @brief    Reads the value of the RC9 GPIO Pin which has a custom name of SPI_SS
  * @param    none
  * @return   none  
  */
-#define IO_RC9_GetValue()         _RC9
+#define SPI_SS_GetValue()         _RC9
 
 /**
  * @ingroup  pinsdriver
- * @brief    Configures the RC9 GPIO Pin which has a custom name of IO_RC9 as Input
+ * @brief    Configures the RC9 GPIO Pin which has a custom name of SPI_SS as Input
  * @param    none
  * @return   none  
  */
-#define IO_RC9_SetDigitalInput()  (_TRISC9 = 1)
+#define SPI_SS_SetDigitalInput()  (_TRISC9 = 1)
 
 /**
  * @ingroup  pinsdriver
- * @brief    Configures the RC9 GPIO Pin which has a custom name of IO_RC9 as Output
+ * @brief    Configures the RC9 GPIO Pin which has a custom name of SPI_SS as Output
  * @param    none
  * @return   none  
  */
-#define IO_RC9_SetDigitalOutput() (_TRISC9 = 0)
+#define SPI_SS_SetDigitalOutput() (_TRISC9 = 0)
 
 /**
  * @ingroup  pinsdriver
- * @brief    Sets the RG8 GPIO Pin which has a custom name of IO_RG8 to High
+ * @brief    Sets the RG8 GPIO Pin which has a custom name of LD_1 to High
  * @pre      The RG8 must be set as Output Pin             
  * @param    none
  * @return   none  
  */
-#define IO_RG8_SetHigh()          (_LATG8 = 1)
+#define LD_1_SetHigh()          (_LATG8 = 1)
 
 /**
  * @ingroup  pinsdriver
- * @brief    Sets the RG8 GPIO Pin which has a custom name of IO_RG8 to Low
+ * @brief    Sets the RG8 GPIO Pin which has a custom name of LD_1 to Low
  * @pre      The RG8 must be set as Output Pin
  * @param    none
  * @return   none  
  */
-#define IO_RG8_SetLow()           (_LATG8 = 0)
+#define LD_1_SetLow()           (_LATG8 = 0)
 
 /**
  * @ingroup  pinsdriver
- * @brief    Toggles the RG8 GPIO Pin which has a custom name of IO_RG8
+ * @brief    Toggles the RG8 GPIO Pin which has a custom name of LD_1
  * @pre      The RG8 must be set as Output Pin
  * @param    none
  * @return   none  
  */
-#define IO_RG8_Toggle()           (_LATG8 ^= 1)
+#define LD_1_Toggle()           (_LATG8 ^= 1)
 
 /**
  * @ingroup  pinsdriver
- * @brief    Reads the value of the RG8 GPIO Pin which has a custom name of IO_RG8
+ * @brief    Reads the value of the RG8 GPIO Pin which has a custom name of LD_1
  * @param    none
  * @return   none  
  */
-#define IO_RG8_GetValue()         _RG8
+#define LD_1_GetValue()         _RG8
 
 /**
  * @ingroup  pinsdriver
- * @brief    Configures the RG8 GPIO Pin which has a custom name of IO_RG8 as Input
+ * @brief    Configures the RG8 GPIO Pin which has a custom name of LD_1 as Input
  * @param    none
  * @return   none  
  */
-#define IO_RG8_SetDigitalInput()  (_TRISG8 = 1)
+#define LD_1_SetDigitalInput()  (_TRISG8 = 1)
 
 /**
  * @ingroup  pinsdriver
- * @brief    Configures the RG8 GPIO Pin which has a custom name of IO_RG8 as Output
+ * @brief    Configures the RG8 GPIO Pin which has a custom name of LD_1 as Output
  * @param    none
  * @return   none  
  */
-#define IO_RG8_SetDigitalOutput() (_TRISG8 = 0)
+#define LD_1_SetDigitalOutput() (_TRISG8 = 0)
 
 /**
  * @ingroup  pinsdriver

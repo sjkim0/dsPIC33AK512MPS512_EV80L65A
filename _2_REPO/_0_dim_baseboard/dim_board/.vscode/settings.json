@@ -1,0 +1,10 @@
+{
+    "memory-inspector.debugTypes": [
+        "arm-debugger",
+        "embedded-debug",
+        "gdb",
+        "mplab-core-da"
+    ],
+    "mplab.clangd.compileCommandsDir": "${workspaceFolder}\\_build\\dim_board\\default",
+    "mplab.clangd.path": "c:\\Program Files\\Microchip\\xc-dsc\\v3.31.01\\bin\\xc-dsc-clangd.exe"
+}

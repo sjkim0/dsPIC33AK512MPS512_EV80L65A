@@ -6,6 +6,7 @@
             "id": "conf1",
             "device": "dsPIC33AK512MPS512",
             "imagePath": "./out/dim_board/default.elf",
+            "tool": "PICkit Basic",
             "packs": [
                 {
                     "name": "dsPIC33AK-MP_DFP",
@@ -29,6 +30,7 @@
                 "linker.heap-size": "0",
                 "linker.remove-unused-sections": true,
                 "compiler++.isolate-each-function": true,
+                "compiler.keep-inline": true,
                 "compiler++.optimization-level": "-O1"
             }
         }
