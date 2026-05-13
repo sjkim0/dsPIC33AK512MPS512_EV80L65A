@@ -3,9 +3,10 @@
     "configurations": [
         {
             "name": "default",
-            "id": "conf1",
+            "id": "",
             "device": "dsPIC33AK512MPS512",
             "imagePath": "./out/dim_board/default.elf",
+            "toolProperties": "default-tool-base",
             "tool": "PICkit Basic",
             "packs": [
                 {
@@ -33,17 +34,17 @@
                 "compiler.keep-inline": true,
                 "compiler++.optimization-level": "-O1"
             }
+        },
+        {
+            "name": "default-tool-base",
+            "type": "tool",
+            "properties": {}
         }
     ],
     "fileSets": [
         {
             "name": "default",
             "files": [
-                "My_MCC_Config/mcc/mcc_generated_files/adc/adc1.h",
-                "My_MCC_Config/mcc/mcc_generated_files/adc/adc2.h",
-                "My_MCC_Config/mcc/mcc_generated_files/adc/adc_features.h",
-                "My_MCC_Config/mcc/mcc_generated_files/adc/adc_interface.h",
-                "My_MCC_Config/mcc/mcc_generated_files/adc/adc_types.h",
                 "My_MCC_Config/mcc/mcc_generated_files/cmp/cmp1.h",
                 "My_MCC_Config/mcc/mcc_generated_files/cmp/cmp2.h",
                 "My_MCC_Config/mcc/mcc_generated_files/cmp/cmp_interface.h",
@@ -71,6 +72,12 @@
                 "My_MCC_Config/mcc/mcc_generated_files/uart/uart1.h",
                 "My_MCC_Config/mcc/mcc_generated_files/uart/uart_interface.h",
                 "My_MCC_Config/mcc/mcc_generated_files/uart/uart_types.h",
+                "My_MCC_Config/src/ap/ap.h",
+                "My_MCC_Config/src/ap/ap_def.h",
+                "My_MCC_Config/src/ap/ap_inc/ap_adc.h",
+                "My_MCC_Config/src/ap/ap_inc/ap_comm.h",
+                "My_MCC_Config/src/ap/ap_inc/ap_led.h",
+                "My_MCC_Config/src/bsp/bsp.h",
                 "My_MCC_Config/mcc/main.c",
                 "My_MCC_Config/mcc/mcc_generated_files/adc/src/adc1.c",
                 "My_MCC_Config/mcc/mcc_generated_files/adc/src/adc2.c",
@@ -91,24 +98,20 @@
                 "My_MCC_Config/mcc/mcc_generated_files/system/src/traps.c",
                 "My_MCC_Config/mcc/mcc_generated_files/system/src/where_was_i.s",
                 "My_MCC_Config/mcc/mcc_generated_files/uart/src/uart1.c",
+                "My_MCC_Config/src/ap/ap.c",
+                "My_MCC_Config/src/ap/ap_src/ap_adc.c",
+                "My_MCC_Config/src/ap/ap_src/ap_comm.c",
+                "My_MCC_Config/src/ap/ap_src/ap_led.c",
+                "My_MCC_Config/src/bsp/bsp.c",
                 "My_MCC_Config/mcc/mcc-manifest-autosave.yml",
                 "My_MCC_Config/mcc/mcc-manifest-generated-success.yml",
                 "My_MCC_Config/mcc/mcc.vscode",
                 "README.md",
-                "My_MCC_Config/src/ap/ap.c",
-                "My_MCC_Config/src/ap/ap_def.h",
-                "My_MCC_Config/src/ap/ap.h",
-                "My_MCC_Config/src/ap/user_comm.h",
-                "My_MCC_Config/src/ap/ap_src/user_comm.c",
-                "My_MCC_Config/src/ap/ap_inc/ap_comm.h",
-                "My_MCC_Config/src/ap/ap_src/ap_comm.c",
-                "My_MCC_Config/src/ap/ap_inc/ap_led.h",
-                "My_MCC_Config/src/ap/ap_src/ap_led.c",
-                "My_MCC_Config/src/bsp/bsp.c",
-                {
-                    "_tempRecord": true,
-                    "include": "My_MCC_Config/src/bsp/bsp.h"
-                }
+                "My_MCC_Config/mcc/mcc_generated_files/adc/adc_interface.h",
+                "My_MCC_Config/mcc/mcc_generated_files/adc/adc1.h",
+                "My_MCC_Config/mcc/mcc_generated_files/adc/adc_types.h",
+                "My_MCC_Config/mcc/mcc_generated_files/adc/adc_features.h",
+                "My_MCC_Config/mcc/mcc_generated_files/adc/adc2.h"
             ]
         }
     ]
