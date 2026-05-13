@@ -26,21 +26,11 @@ Main application
 
 // pin은 pins에위치하며 config에서 설정한 PIN의 custom name이 함수이름으로 선언됨
 
-// delay 함수를 사용하기 위해 FCY를 정의해야함
-#define FCY 200000000UL
-#include <libpic30.h>
 
 int main(void)
 {
-    // SYSTEM_Initialize();
+    bspInit();
     apInit();
 
-    while(1)
-    {
-        apLoop();
-        // LD_1_SetHigh();
-        __delay_ms(500);
-        // LD_1_SetLow();
-        __delay_ms(500);
-    }
+    apLoop();
 }

@@ -99,8 +99,16 @@
                 "My_MCC_Config/src/ap/ap_def.h",
                 "My_MCC_Config/src/ap/ap.h",
                 "My_MCC_Config/src/ap/user_comm.h",
-                "My_MCC_Config/src/ap/user_comm.c",
-                "My_MCC_Config/src/bsp/bsp.h"
+                "My_MCC_Config/src/ap/ap_src/user_comm.c",
+                "My_MCC_Config/src/ap/ap_inc/ap_comm.h",
+                "My_MCC_Config/src/ap/ap_src/ap_comm.c",
+                "My_MCC_Config/src/ap/ap_inc/ap_led.h",
+                "My_MCC_Config/src/ap/ap_src/ap_led.c",
+                "My_MCC_Config/src/bsp/bsp.c",
+                {
+                    "_tempRecord": true,
+                    "include": "My_MCC_Config/src/bsp/bsp.h"
+                }
             ]
         }
     ]

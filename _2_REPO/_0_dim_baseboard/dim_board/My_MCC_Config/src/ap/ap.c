@@ -1,13 +1,17 @@
 #include "ap.h"
-#include "user_comm.h"
 
 
 void apInit(void)
 {
-    userCommInit();
+    apLedInit();
+    apCommInit();
 }
 
 void apLoop(void)
 {
-    userCommLoop();
+    while(true)
+    {
+        apLedLoop();
+        apCommLoop();
+    }
 }

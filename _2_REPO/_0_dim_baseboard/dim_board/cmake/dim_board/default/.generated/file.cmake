@@ -37,7 +37,9 @@ set(dim_board_default_default_XC_DSC_FILE_TYPE_compile
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/mcc/mcc_generated_files/system/src/traps.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/mcc/mcc_generated_files/uart/src/uart1.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/src/ap/ap.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/src/ap/user_comm.c")
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/src/ap/ap_src/ap_comm.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/src/ap/ap_src/ap_led.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/src/bsp/bsp.c")
 set_source_files_properties(${dim_board_default_default_XC_DSC_FILE_TYPE_compile} PROPERTIES LANGUAGE C)
 set(dim_board_default_default_XC_DSC_FILE_TYPE_compile_cpp)
 set_source_files_properties(${dim_board_default_default_XC_DSC_FILE_TYPE_compile_cpp} PROPERTIES LANGUAGE CXX)
