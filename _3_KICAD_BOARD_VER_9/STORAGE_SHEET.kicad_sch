@@ -1152,7 +1152,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0e244909-9ebe-401b-a816-7c78e3c284b6")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR032"
 			(at 111.76 107.95 0)
 			(effects
 				(font
@@ -1202,7 +1202,7 @@
 		(instances
 			(project "_3_KICAD_BOARD_VER_9"
 				(path "/04989ac4-daca-49e5-abaa-7cb085fca6f2/d01c62fc-b898-42c1-a799-615f76f876c4"
-					(reference "#PWR031")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -1315,7 +1315,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "73c29711-e290-4a89-b81d-cfa4bbad93a5")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR030"
 			(at 95.25 80.01 0)
 			(effects
 				(font
@@ -1365,7 +1365,7 @@
 		(instances
 			(project "_3_KICAD_BOARD_VER_9"
 				(path "/04989ac4-daca-49e5-abaa-7cb085fca6f2/d01c62fc-b898-42c1-a799-615f76f876c4"
-					(reference "#PWR029")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -1381,7 +1381,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "819accf6-fbdc-446d-8ad6-f826cac6f45e")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR033"
 			(at 146.05 77.47 0)
 			(effects
 				(font
@@ -1431,7 +1431,7 @@
 		(instances
 			(project "_3_KICAD_BOARD_VER_9"
 				(path "/04989ac4-daca-49e5-abaa-7cb085fca6f2/d01c62fc-b898-42c1-a799-615f76f876c4"
-					(reference "#PWR032")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -1447,7 +1447,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c9a6cc7-b541-4df0-b24e-1ac12dd11dd5")
-		(property "Reference" "R3"
+		(property "Reference" "R4"
 			(at 158.75 80.0099 0)
 			(effects
 				(font
@@ -1510,7 +1510,7 @@
 		(instances
 			(project "_3_KICAD_BOARD_VER_9"
 				(path "/04989ac4-daca-49e5-abaa-7cb085fca6f2/d01c62fc-b898-42c1-a799-615f76f876c4"
-					(reference "R3")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -1526,7 +1526,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8161a2b-9de2-4d78-a929-9b9b063f0b8b")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR031"
 			(at 95.25 96.52 0)
 			(effects
 				(font
@@ -1576,7 +1576,7 @@
 		(instances
 			(project "_3_KICAD_BOARD_VER_9"
 				(path "/04989ac4-daca-49e5-abaa-7cb085fca6f2/d01c62fc-b898-42c1-a799-615f76f876c4"
-					(reference "#PWR030")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -1592,7 +1592,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d07141cd-8b14-4c08-9831-13fe9834b356")
-		(property "Reference" "R2"
+		(property "Reference" "R3"
 			(at 148.59 80.0099 0)
 			(effects
 				(font
@@ -1655,7 +1655,7 @@
 		(instances
 			(project "_3_KICAD_BOARD_VER_9"
 				(path "/04989ac4-daca-49e5-abaa-7cb085fca6f2/d01c62fc-b898-42c1-a799-615f76f876c4"
-					(reference "R2")
+					(reference "R3")
 					(unit 1)
 				)
 			)

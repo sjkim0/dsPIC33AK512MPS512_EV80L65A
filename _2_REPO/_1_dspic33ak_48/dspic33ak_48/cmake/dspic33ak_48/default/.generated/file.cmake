@@ -1,0 +1,42 @@
+# The following variables contains the files used by the different stages of the build process.
+set(dspic33ak_48_default_default_XC_DSC_FILE_TYPE_assemble
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/mcc/mcc_generated_files/system/src/dmt_asm.s"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/mcc/mcc_generated_files/system/src/where_was_i.s")
+set_source_files_properties(${dspic33ak_48_default_default_XC_DSC_FILE_TYPE_assemble} PROPERTIES LANGUAGE ASM)
+
+# For assembly files, add "." to the include path for each file so that .include with a relative path works
+foreach(source_file ${dspic33ak_48_default_default_XC_DSC_FILE_TYPE_assemble})
+        set_source_files_properties(${source_file} PROPERTIES INCLUDE_DIRECTORIES "$<PATH:NORMAL_PATH,$<PATH:REMOVE_FILENAME,${source_file}>>")
+endforeach()
+
+set(dspic33ak_48_default_default_XC_DSC_FILE_TYPE_assemblePreproc)
+set_source_files_properties(${dspic33ak_48_default_default_XC_DSC_FILE_TYPE_assemblePreproc} PROPERTIES LANGUAGE ASM)
+
+# For assembly files, add "." to the include path for each file so that .include with a relative path works
+foreach(source_file ${dspic33ak_48_default_default_XC_DSC_FILE_TYPE_assemblePreproc})
+        set_source_files_properties(${source_file} PROPERTIES INCLUDE_DIRECTORIES "$<PATH:NORMAL_PATH,$<PATH:REMOVE_FILENAME,${source_file}>>")
+endforeach()
+
+set(dspic33ak_48_default_default_XC_DSC_FILE_TYPE_compile
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/mcc/main.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/mcc/mcc_generated_files/system/src/clock.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/mcc/mcc_generated_files/system/src/config_bits.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/mcc/mcc_generated_files/system/src/dmt.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/mcc/mcc_generated_files/system/src/interrupt.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/mcc/mcc_generated_files/system/src/pins.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/mcc/mcc_generated_files/system/src/reset.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/mcc/mcc_generated_files/system/src/system.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/mcc/mcc_generated_files/system/src/traps.c")
+set_source_files_properties(${dspic33ak_48_default_default_XC_DSC_FILE_TYPE_compile} PROPERTIES LANGUAGE C)
+set(dspic33ak_48_default_default_XC_DSC_FILE_TYPE_compile_cpp)
+set_source_files_properties(${dspic33ak_48_default_default_XC_DSC_FILE_TYPE_compile_cpp} PROPERTIES LANGUAGE CXX)
+set(dspic33ak_48_default_default_XC_DSC_FILE_TYPE_link)
+set(dspic33ak_48_default_default_XC_DSC_FILE_TYPE_bin2hex)
+set(dspic33ak_48_default_image_name "default.elf")
+set(dspic33ak_48_default_image_base_name "default")
+
+# The output directory of the final image.
+set(dspic33ak_48_default_output_dir "${CMAKE_CURRENT_SOURCE_DIR}/../../../out/dspic33ak_48")
+
+# The full path to the final image.
+set(dspic33ak_48_default_full_path_to_image ${dspic33ak_48_default_output_dir}/${dspic33ak_48_default_image_name})

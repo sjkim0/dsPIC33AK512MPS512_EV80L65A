@@ -1,0 +1,10 @@
+{
+    "mplab.clangd.compileCommandsDir": "${workspaceFolder}\\_build\\dspic33ak_48\\default",
+    "mplab.clangd.path": "c:\\Program Files\\Microchip\\xc-dsc\\v3.31.01\\bin\\xc-dsc-clangd.exe",
+    "memory-inspector.debugTypes": [
+        "arm-debugger",
+        "embedded-debug",
+        "gdb",
+        "mplab-core-da"
+    ]
+}
