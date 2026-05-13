@@ -10,5 +10,3 @@ void apCommLoop(void)
 {
 
 }
-
-

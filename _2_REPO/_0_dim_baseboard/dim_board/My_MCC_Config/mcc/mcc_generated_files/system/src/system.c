@@ -43,6 +43,7 @@
 #include "../../input_capture/sccp1.h"
 #include "../../input_capture/sccp2.h"
 #include "../../spi_host/spi1.h"
+#include "../../timer/tmr1.h"
 #include "../../uart/uart1.h"
 #include "../interrupt.h"
 
@@ -60,6 +61,7 @@ void SYSTEM_Initialize(void)
     SCCP1_InputCapture_Initialize();
     SCCP2_InputCapture_Initialize();
     SPI1_Initialize();
+    TMR1_Initialize();
     UART1_Initialize();
     INTERRUPT_GlobalEnable();
     INTERRUPT_Initialize();

@@ -44,10 +44,15 @@ void INTERRUPT_Initialize(void)
     // Priority: 1
     IPC10bits.I2C1IP = 1;
     
+    // T1: Timer 1 interrupt
+    // Priority: 1
+    IPC6bits.T1IP = 1;
+    
 }
 
 void INTERRUPT_Deinitialize(void)
 {
     //POR default value of priority
     IPC10bits.I2C1IP = 4;
+    IPC6bits.T1IP = 4;
 }

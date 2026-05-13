@@ -111,7 +111,10 @@
                 "My_MCC_Config/mcc/mcc_generated_files/adc/adc1.h",
                 "My_MCC_Config/mcc/mcc_generated_files/adc/adc_types.h",
                 "My_MCC_Config/mcc/mcc_generated_files/adc/adc_features.h",
-                "My_MCC_Config/mcc/mcc_generated_files/adc/adc2.h"
+                "My_MCC_Config/mcc/mcc_generated_files/adc/adc2.h",
+                "My_MCC_Config/mcc/mcc_generated_files/timer/timer_interface.h",
+                "My_MCC_Config/mcc/mcc_generated_files/timer/tmr1.h",
+                "My_MCC_Config/mcc/mcc_generated_files/timer/src/tmr1.c"
             ]
         }
     ]
