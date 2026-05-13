@@ -18,12 +18,13 @@
     EXCEED AMOUNT OF FEES, IF ANY, YOU PAID DIRECTLY TO MICROCHIP FOR 
     THIS SOFTWARE.
 */
-#include "mcc_generated_files/system/system.h"
 /*
 Main application
 */
+
+#include "ap.h"
+
 // pin은 pins에위치하며 config에서 설정한 PIN의 custom name이 함수이름으로 선언됨
-#include "mcc_generated_files/system/pins.h"
 
 // delay 함수를 사용하기 위해 FCY를 정의해야함
 #define FCY 200000000UL
@@ -31,13 +32,15 @@ Main application
 
 int main(void)
 {
-    SYSTEM_Initialize();
+    // SYSTEM_Initialize();
+    apInit();
 
     while(1)
     {
-        LD_1_SetHigh();
+        apLoop();
+        // LD_1_SetHigh();
         __delay_ms(500);
-        LD_1_SetLow();
+        // LD_1_SetLow();
         __delay_ms(500);
-    }    
+    }
 }
