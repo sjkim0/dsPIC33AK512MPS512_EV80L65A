@@ -6,6 +6,7 @@
 #include "ap_comm.h"
 #include "ap_led.h"
 #include "ap_adc.h"
+#include "ap_fram.h"
 
 
 void apInit(void);

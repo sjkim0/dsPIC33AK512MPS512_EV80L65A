@@ -114,7 +114,9 @@
                 "My_MCC_Config/mcc/mcc_generated_files/adc/adc2.h",
                 "My_MCC_Config/mcc/mcc_generated_files/timer/timer_interface.h",
                 "My_MCC_Config/mcc/mcc_generated_files/timer/tmr1.h",
-                "My_MCC_Config/mcc/mcc_generated_files/timer/src/tmr1.c"
+                "My_MCC_Config/mcc/mcc_generated_files/timer/src/tmr1.c",
+                "My_MCC_Config/src/ap/ap_src/ap_fram.c",
+                "My_MCC_Config/src/ap/ap_inc/ap_fram.h"
             ]
         }
     ]

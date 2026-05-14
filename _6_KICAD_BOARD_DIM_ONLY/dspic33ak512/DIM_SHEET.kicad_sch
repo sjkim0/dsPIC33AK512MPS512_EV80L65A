@@ -6821,16 +6821,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 55.88) (xy 96.52 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b80c794-954a-4913-ac53-46fe0d7cdf62")
-	)
-	(wire
-		(pts
 			(xy 121.92 116.84) (xy 160.02 116.84)
 		)
 		(stroke
@@ -7411,6 +7401,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 55.88) (xy 96.52 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "860ac120-22c5-418b-bb46-336dd6043c89")
+	)
+	(wire
+		(pts
 			(xy 121.92 55.88) (xy 149.86 55.88)
 		)
 		(stroke
@@ -7678,16 +7678,6 @@
 			(type default)
 		)
 		(uuid "a3178f54-9434-4fde-ab9e-ae7ce59d280d")
-	)
-	(wire
-		(pts
-			(xy 72.39 58.42) (xy 96.52 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a390adc9-5f2f-41f5-ba08-fbb3637852bd")
 	)
 	(wire
 		(pts
@@ -8038,6 +8028,16 @@
 			(type default)
 		)
 		(uuid "c9f22e86-1735-469f-936d-1fd42564f9b7")
+	)
+	(wire
+		(pts
+			(xy 72.39 58.42) (xy 96.52 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb113685-5ff8-4a67-9d50-56a702cbabf8")
 	)
 	(wire
 		(pts
@@ -8460,7 +8460,7 @@
 		(uuid "0d852b5a-7b86-483e-82ab-6ef6403369cc")
 	)
 	(label "I2C_BUS.SCL"
-		(at 72.39 58.42 0)
+		(at 72.39 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9010,7 +9010,7 @@
 		(uuid "c831b75e-774b-45bd-8541-f03184d77558")
 	)
 	(label "I2C_BUS.SDA"
-		(at 72.39 55.88 0)
+		(at 72.39 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
