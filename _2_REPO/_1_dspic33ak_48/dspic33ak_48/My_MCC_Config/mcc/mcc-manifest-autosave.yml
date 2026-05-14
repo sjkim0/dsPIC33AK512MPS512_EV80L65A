@@ -2,7 +2,7 @@
 
 manifest_file_version: 1.0.0
 project: N/A
-creation_date: 2026-05-13T14:07:47.912+09:00[Asia/Seoul]
+creation_date: 2026-05-14T08:57:31.791+09:00[Asia/Seoul]
 operating_system: Windows 11
 mcc_mode: VSCodePlugin
 mcc_mode_version: Unknown
@@ -22,10 +22,12 @@ modules:
 - {name: '@mchp-mcc/dspic33a-configuration-bits', type: MELODY, version: 1.1.2}
 - {name: '@mchp-mcc/dspic33a-dmt', type: MELODY, version: 1.0.3}
 - {name: '@mchp-mcc/dspic33a-interrupt', type: MELODY, version: 1.1.4}
+- {name: '@mchp-mcc/dspic33a-mccp', type: MELODY, version: 1.2.2}
 - {name: '@mchp-mcc/dspic33a-pac', type: MELODY, version: 1.0.2}
 - {name: '@mchp-mcc/dspic33a-pin-manager', type: MELODY, version: 1.0.5}
 - {name: '@mchp-mcc/dspic33a-reset', type: MELODY, version: 1.0.3}
 - {name: '@mchp-mcc/dspic33a-wdt', type: MELODY, version: 1.0.3}
+- {name: '@mchp-mcc/ic-driver', type: MELODY, version: 1.0.7}
 - {name: '@mchp-mcc/main-16bit-manager', type: MELODY, version: 1.1.6}
 - {name: '@mchp-mcc/pic-16bit', type: MELODY, version: 5.16.0}
 - {name: '@mchp-mcc/pin-content-processor', type: MELODY, version: 3.11.0}

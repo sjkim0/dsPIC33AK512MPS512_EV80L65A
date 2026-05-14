@@ -9,4 +9,5 @@
   (lib (name "dsPIC33AK512MPS505T")(type "KiCad")(uri "C:/Users/ksj10/Desktop/_0_programs/_3_GIT_REPO/__PRIVATE/_37_MPLAB_VSCODE/_4_KICAD_SYMBOL_FOOTPRINT/ul_dsPIC33AK512MPS505T-I-PT/KiCADv6/2026-04-30_03-05-40.kicad_sym")(options "")(descr ""))
   (lib (name "KIA7805AF")(type "KiCad")(uri "C:/Users/ksj10/Desktop/_0_programs/_3_GIT_REPO/__PRIVATE/_37_MPLAB_VSCODE/_4_KICAD_SYMBOL_FOOTPRINT/ul_KIA7805AF/KiCADv6/2026-04-29_04-35-08.kicad_sym")(options "")(descr ""))
   (lib (name "MY_LIB")(type "KiCad")(uri "${KIPRJMOD}/MY_LIB.kicad_sym")(options "")(descr ""))
+  (lib (name "AMP26LV32EIPWR")(type "KiCad")(uri "C:/Users/ksj10/Desktop/_0_programs/_3_GIT_REPO/__PRIVATE/_37_MPLAB_VSCODE/_4_KICAD_SYMBOL_FOOTPRINT/ul_AM26LV32EIPWR/KiCADv6/2026-05-13_20-35-25.kicad_sym")(options "")(descr ""))
 )
