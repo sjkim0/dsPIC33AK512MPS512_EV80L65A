@@ -1,13 +1,13 @@
 #include "ap.h"
-#include "ap_fram.h"
 
 
 void apInit(void)
 {
-    apFramInit();
+    // apFramInit();  // i2c pin 아트웍 문제 발생
     apLedInit();
     apCommInit();
     apAdcInit();
+    apExtDacInit();
 }
 
 void apLoop(void)
@@ -17,6 +17,7 @@ void apLoop(void)
         apLedLoop();
         apAdcLoop();
         apCommLoop();
-        apFramLoop();
+        apExtDacLoop();
+        // apFramLoop();  // i2c pin 아트웍 문제 발생
     }
 }

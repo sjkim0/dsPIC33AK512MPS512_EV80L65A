@@ -7,6 +7,7 @@
 #include "ap_led.h"
 #include "ap_adc.h"
 #include "ap_fram.h"
+#include "ap_ext_dac.h"
 
 
 void apInit(void);

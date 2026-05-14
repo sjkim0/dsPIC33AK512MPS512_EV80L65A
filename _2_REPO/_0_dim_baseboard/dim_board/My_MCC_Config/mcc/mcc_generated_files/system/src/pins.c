@@ -48,7 +48,7 @@ void PINS_Initialize(void)
      ***************************************************************************/
     LATA = 0x0000UL;
     LATB = 0x0000UL;
-    LATC = 0x2000UL;
+    LATC = 0x2200UL;
     LATD = 0x0000UL;
     LATE = 0x0000UL;
     LATF = 0x0000UL;
