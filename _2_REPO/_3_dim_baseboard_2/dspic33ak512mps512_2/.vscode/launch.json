@@ -1,0 +1,19 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // Note: Properties here can override MPLAB project settings
+      "name": "Launch dspic33ak512mps512_2: default",
+      "type": "mplab-core-da",
+      "request": "launch",
+      "project": "dspic33ak512mps512_2",
+      "configuration": "default",
+      "stopOnEntry": true,
+      "preLaunchTask": "dspic33ak512mps512_2: default - Build",
+      "program": "${workspaceFolder}/out/dspic33ak512mps512_2/default.elf"
+    }
+  ]
+}

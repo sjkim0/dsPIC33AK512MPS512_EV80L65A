@@ -2288,16 +2288,6 @@
 		)
 		(uuid "44d2cf44-7c01-4edb-b72a-278a6df3e00c")
 	)
-	(wire
-		(pts
-			(xy 88.9 53.34) (xy 102.87 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45d3d2d1-3a85-4979-a088-eacb53ba695f")
-	)
 	(bus
 		(pts
 			(xy 86.36 123.19) (xy 86.36 125.73)
@@ -3250,6 +3240,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 53.34) (xy 102.87 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdfef992-1f88-4426-8527-7ed5e6b97368")
+	)
+	(wire
+		(pts
 			(xy 129.54 40.64) (xy 128.27 40.64)
 		)
 		(stroke
@@ -4149,7 +4149,7 @@
 		(uuid "afaa0600-85d8-4c85-aaa9-02e01ce9c955")
 	)
 	(label "ADC_BUS._B1"
-		(at 88.9 53.34 0)
+		(at 90.17 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
