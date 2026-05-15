@@ -78,12 +78,10 @@ void apFramLoop(void)
         else if(ap_fram_inst.is_i2c_error == ENUM_I2C_ERROR_NACK_RECEIVED)
         {
             // NACK received
-            int a = 0;  // 디버깅용 변수, 필요에 따라 제거
         }
         else if(ap_fram_inst.is_i2c_error == ENUM_I2C_ERROR_BUS_COLLISION)
         {
             // Bus collision occurred
-            int a = 0;  // 디버깅용 변수, 필요에 따라 제거
         }
     }
 }

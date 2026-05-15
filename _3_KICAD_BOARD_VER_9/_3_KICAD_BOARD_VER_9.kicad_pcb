@@ -24885,7 +24885,7 @@
 		(net_name "+3.3V")
 		(layer "In2.Cu")
 		(uuid "7196ae46-9d4a-46db-add9-3abcdbff799d")
-		(name "GND_POUR")
+		(name "UPPER_33V")
 		(hatch edge 0.5)
 		(priority 5)
 		(connect_pads thru_hole_only

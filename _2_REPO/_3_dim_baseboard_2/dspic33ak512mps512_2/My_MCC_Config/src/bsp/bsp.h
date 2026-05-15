@@ -12,12 +12,7 @@
 #define FCY 200000000UL
 #include <libpic30.h>
 
-
-enum ENUM_CALLBACK_ID
-{
-    CALLBACK_ID_I2C1 = 0,
-    CALLBACK_ID_MAX
-};
+#include "bsp_def.h"  // callback function
 
 
 void bspInit(void);

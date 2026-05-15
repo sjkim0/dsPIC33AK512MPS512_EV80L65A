@@ -42,7 +42,8 @@ set(dspic33ak512mps512_2_default_default_XC_DSC_FILE_TYPE_compile
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/src/ap/ap_src/ap_ext_dac.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/src/ap/ap_src/ap_fram.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/src/ap/ap_src/ap_led.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/src/bsp/bsp.c")
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/src/bsp/bsp.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/src/bsp/bsp_def.c")
 set_source_files_properties(${dspic33ak512mps512_2_default_default_XC_DSC_FILE_TYPE_compile} PROPERTIES LANGUAGE C)
 set(dspic33ak512mps512_2_default_default_XC_DSC_FILE_TYPE_compile_cpp)
 set_source_files_properties(${dspic33ak512mps512_2_default_default_XC_DSC_FILE_TYPE_compile_cpp} PROPERTIES LANGUAGE CXX)
