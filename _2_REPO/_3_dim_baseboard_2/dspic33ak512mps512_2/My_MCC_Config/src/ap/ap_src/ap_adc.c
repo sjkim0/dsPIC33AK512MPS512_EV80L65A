@@ -24,10 +24,7 @@ static void clearAdcCallbacks(void);
 static void enableAdcInterrupts(void);
 
 static void pollingAdcTest(void);
-static void interruptAdcTest(void);
-static void tryInterruptAdc1FlagClear(void);
-static void tryInterruptAdc2FlagClear(void);
-
+static void interruptAdcLoop(void);
 
 static void initAdc1Comparator(void);  // AD1CMPSTATbits
 static void LoopAdc1Comparator(void);
@@ -36,8 +33,8 @@ static void LoopAdc1Comparator(void);
 static uint16_t _aDC1PollingResultGet(const enum ADC1_CHANNEL channel);
 static uint16_t _aDC2PollingResultGet(const enum ADC2_CHANNEL channel);
 
-static uint16_t _aDC1InterruptResultCall(const enum ADC1_CHANNEL channel);
-static uint16_t _aDC2InterruptResultCall(const enum ADC2_CHANNEL channel);
+static void _aDC1InterruptCall(const enum ADC1_CHANNEL channel);
+static void _aDC2InterruptCall(const enum ADC2_CHANNEL channel);
 
 void apAdcInit(void)
 {
@@ -54,7 +51,7 @@ void apAdcInit(void)
 void apAdcLoop(void)
 {
     // pollingAdcTest();
-    interruptAdcTest();
+    interruptAdcLoop();
     LoopAdc1Comparator();
 }
 
@@ -74,12 +71,12 @@ static void clearAdcCallbacks(void)
 {
     for(int i = 0; i < ADC1_MAX_CHANNELS; i++)
     {
-        ap_adc_inst.adc_1_interrupt_called[i] = false;
+        ap_adc_inst.adc_1_interrupt_called[i] = true;
         ADC1_IndividualChannelInterruptFlagClear(i);
     }
     for(int i = 0; i < ADC2_MAX_CHANNELS; i++)
     {
-        ap_adc_inst.adc_2_interrupt_called[i] = false;
+        ap_adc_inst.adc_2_interrupt_called[i] = true;
         ADC2_IndividualChannelInterruptFlagClear(i);
     }
 }
@@ -111,39 +108,15 @@ static void pollingAdcTest(void)
     }
 }
 
-static void interruptAdcTest(void)
+static void interruptAdcLoop(void)
 {
-    tryInterruptAdc1FlagClear();
-    tryInterruptAdc2FlagClear();
     for(int i = 0; i < ADC1_MAX_CHANNELS; i++)
     {
-        ap_adc_inst.adc_1_result[i] = _aDC1InterruptResultCall(i);
+        _aDC1InterruptCall(i);
     }
     for(int i = 0; i < ADC2_MAX_CHANNELS; i++)
     {
-        ap_adc_inst.adc_2_result[i] = _aDC2InterruptResultCall(i);
-    }
-}
-
-static void tryInterruptAdc1FlagClear(void)
-{
-    for(int i = CALLBACK_ID_ADC1_CH0; i <= CALLBACK_ID_ADC1_CH2; i++)
-    {
-        if(bspIsCalled(i) == true)
-        {
-            ap_adc_inst.adc_1_interrupt_called[i - CALLBACK_ID_ADC1_CH0] = false;
-        }
-    }
-}
-
-static void tryInterruptAdc2FlagClear(void)
-{
-    for(int i = CALLBACK_ID_ADC2_CH0; i <= CALLBACK_ID_ADC2_CH2; i++)
-    {
-        if(bspIsCalled(i) == true)
-        {
-            ap_adc_inst.adc_2_interrupt_called[i - CALLBACK_ID_ADC2_CH0] = false;
-        }
+        _aDC2InterruptCall(i);
     }
 }
 
@@ -229,22 +202,64 @@ static uint16_t _aDC2PollingResultGet(const enum ADC2_CHANNEL channel)
     return ADC2_ConversionResultGet(channel);
 }
 
-static uint16_t _aDC1InterruptResultCall(const enum ADC1_CHANNEL channel)
+static void _aDC1InterruptCall(const enum ADC1_CHANNEL channel)
 {
-    if(ap_adc_inst.adc_1_interrupt_called[channel] == false)
+    if(ap_adc_inst.adc_1_interrupt_called[channel] == true)
     {
-        ap_adc_inst.adc_1_interrupt_called[channel] = true;
+        ap_adc_inst.adc_1_interrupt_called[channel] = false;
         ADC1_ChannelSoftwareTriggerEnable(channel);
     }
-    return ap_adc_inst.adc_1_result[channel];
 }
 
-static uint16_t _aDC2InterruptResultCall(const enum ADC2_CHANNEL channel)
+static void _aDC2InterruptCall(const enum ADC2_CHANNEL channel)
 {
-    if(ap_adc_inst.adc_2_interrupt_called[channel] == false)
+    if(ap_adc_inst.adc_2_interrupt_called[channel] == true)
     {
-        ap_adc_inst.adc_2_interrupt_called[channel] = true;
-        ADC2_ChannelSoftwareTriggerEnable(channel);
+        ap_adc_inst.adc_2_interrupt_called[channel] = false;
+        ADC1_ChannelSoftwareTriggerEnable(channel);
     }
-    return ap_adc_inst.adc_2_result[channel];
+}
+
+
+void ADC1_ChannelCallback(enum ADC1_CHANNEL channel, uint16_t adcVal)
+{
+    // Handle ADC1 channel callback
+    switch(channel)
+    {
+        case ADC1_Channel0:
+            ap_adc_inst.adc_1_interrupt_called[channel] = true;
+            ap_adc_inst.adc_1_result[channel] = adcVal;
+            break;
+        case ADC1_Channel1:
+            ap_adc_inst.adc_1_interrupt_called[channel] = true;
+            ap_adc_inst.adc_1_result[channel] = adcVal;
+            break;
+        case ADC1_Channel2:
+            ap_adc_inst.adc_1_interrupt_called[channel] = true;
+            ap_adc_inst.adc_1_result[channel] = adcVal;
+            break;
+        default:
+            break;
+    }
+}
+
+void ADC2_ChannelCallback(enum ADC2_CHANNEL channel, uint16_t adcVal)
+{
+    switch(channel)
+    {
+        case ADC2_Channel0:
+            ap_adc_inst.adc_1_interrupt_called[channel] = true;
+            ap_adc_inst.adc_2_result[channel] = adcVal;
+            break;
+        case ADC2_Channel1:
+            ap_adc_inst.adc_1_interrupt_called[channel] = true;
+            ap_adc_inst.adc_2_result[channel] = adcVal;
+            break;
+        case ADC2_Channel2:
+            ap_adc_inst.adc_1_interrupt_called[channel] = true;
+            ap_adc_inst.adc_2_result[channel] = adcVal;
+            break;
+        default:
+            break;
+    }
 }

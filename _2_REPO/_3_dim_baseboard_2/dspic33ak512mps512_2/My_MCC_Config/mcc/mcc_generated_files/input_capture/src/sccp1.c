@@ -64,7 +64,7 @@ void SCCP1_InputCapture_Initialize(void)
 {
     //MOD None; CCSEL enabled; T32 16 Bit; TMRPS 1:1; CLKSEL Standard Speed Peripheral Clock; TMRSYNC disabled; SIDL disabled; ON disabled; SYNC None; ALTSYNC disabled; ONESHOT disabled; TRIGEN disabled; OPS Each Time Base Period Match; RTRGEN disabled; OPSSRC Timer Interrupt Event; 
     CCP1CON1 = 0x10UL;
-    //ASDG disabled; SSDG disabled; ASDGM disabled; PWMRSEN disabled; ICS None; AUXOUT Disabled; ICGSM Level-Sensitive mode; OCAEN disabled; OENSYNC disabled; 
+    //ASDG disabled; SSDG disabled; ASDGM disabled; PWMRSEN disabled; ICS IC1; AUXOUT Disabled; ICGSM Level-Sensitive mode; OCAEN disabled; OENSYNC disabled; 
     CCP1CON2 = 0x0UL;
     //PSSACE Tri-state; POLACE disabled; OSCNT None; OETRIG disabled; PSSBDF Tri-state; POLBDF disabled; 
     CCP1CON3 = 0x0UL;

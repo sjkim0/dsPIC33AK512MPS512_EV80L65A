@@ -8,6 +8,7 @@
 #include "ap_adc.h"
 #include "ap_fram.h"
 #include "ap_ext_dac.h"
+#include "ap_cmp_dac.h"
 
 
 void apInit(void);
