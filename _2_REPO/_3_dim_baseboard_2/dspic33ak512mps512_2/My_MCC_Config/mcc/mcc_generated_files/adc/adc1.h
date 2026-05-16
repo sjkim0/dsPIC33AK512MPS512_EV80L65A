@@ -77,7 +77,10 @@ enum ADC1_CHANNEL
 */
 enum ADC1_CMP
 {
-    ADC1_MAX_CMPS = 0    /**< Maximum Comparators configured by user for ADC1 */
+    ADC1_CMP0,     /**< Comparator name:ADC1_CMP0 connected to ADC1_AN0 */ 
+    ADC1_CMP1,     /**< Comparator name:ADC1_CMP1 connected to ADC1_AN1 */ 
+    ADC1_CMP2,     /**< Comparator name:ADC1_CMP2 connected to ADC1_AN2 */ 
+    ADC1_MAX_CMPS = 3    /**< Maximum Comparators configured by user for ADC1 */
 };
 
 // Section: Data Type Definitions
@@ -526,6 +529,15 @@ void ADC1_ComparatorCallback(const enum ADC1_CMP comparator);
  */
 void ADC1_ChannelTasks(const enum ADC1_CHANNEL channel);
 
+/**
+ * @ingroup    adcdriver
+ * @brief      Used to implement the tasks for polled implementations of Comparators
+ * @pre        \ref ADC1_Initialize() function should have been 
+ *             called before calling this function.
+ * @param[in]  comparator -   Selected Comparator.  
+ * @return     none  
+ */
+void ADC1_ComparatorTasks(const enum ADC1_CMP comparator);
 
 /**
  * @ingroup  adcdriver

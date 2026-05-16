@@ -76,7 +76,7 @@ static const struct ADC_MULTICORE adc1Multicore = {
     .SampleCountGet                         = NULL,
     .SampleCountStatusGet                   = NULL,
     .ChannelTasks                           = &ADC1_ChannelTasks, 
-    .ComparatorTasks                        = NULL,
+    .ComparatorTasks                        = &ADC1_ComparatorTasks,
     .IndividualChannelInterruptEnable       = &ADC1_IndividualChannelInterruptEnable,
     .IndividualChannelInterruptDisable      = &ADC1_IndividualChannelInterruptDisable,
     .IndividualChannelInterruptFlagClear    = &ADC1_IndividualChannelInterruptFlagClear,
@@ -137,12 +137,12 @@ void ADC1_Initialize(void)
     AD1CH1CON1 = 0x1200001UL;
     //TRG1SRC Software trigger initiated by using ADnSWTRG register; MODE Single sample initiated by TRG1SRC[4:0] trigger; TRG2SRC Triggers are disabled; ACCNUM 4 samples, 13 bits result; SAMC 0.5 TAD; IRQSEL enabled; EIEN disabled; TRG1POL disabled; PINSEL AD1AN2; NINSEL disabled; FRAC Integer; DIFF disabled; 
     AD1CH2CON1 = 0x2200001UL;
-    //ADCMPCNT disabled; CMPMOD NONE; CMPCNTMOD disabled; CMPVAL enabled; ACCBRST disabled; ACCRO disabled; 
-    AD1CH0CON2 = 0x20000000UL;
-    //ADCMPCNT disabled; CMPMOD NONE; CMPCNTMOD disabled; CMPVAL enabled; ACCBRST disabled; ACCRO disabled; 
-    AD1CH1CON2 = 0x20000000UL;
-    //ADCMPCNT disabled; CMPMOD NONE; CMPCNTMOD disabled; CMPVAL enabled; ACCBRST disabled; ACCRO disabled; 
-    AD1CH2CON2 = 0x20000000UL;
+    //ADCMPCNT disabled; CMPMOD In bounds of (>=) ADnCMPLOx and (<=) ADnCMPHIx; CMPCNTMOD disabled; CMPVAL enabled; ACCBRST disabled; ACCRO disabled; 
+    AD1CH0CON2 = 0x20002000UL;
+    //ADCMPCNT disabled; CMPMOD In bounds of (>=) ADnCMPLOx and (<=) ADnCMPHIx; CMPCNTMOD disabled; CMPVAL enabled; ACCBRST disabled; ACCRO disabled; 
+    AD1CH1CON2 = 0x20002000UL;
+    //ADCMPCNT disabled; CMPMOD In bounds of (>=) ADnCMPLOx and (<=) ADnCMPHIx; CMPCNTMOD disabled; CMPVAL enabled; ACCBRST disabled; ACCRO disabled; 
+    AD1CH2CON2 = 0x20002000UL;
     //
     AD1CH0RES = 0x0UL;
     //
@@ -155,18 +155,18 @@ void ADC1_Initialize(void)
     AD1CH1CNT = 0x0UL;
     //CNT 0x0; 
     AD1CH2CNT = 0x0UL;
-    //CMPLO 0x0; 
-    AD1CH0CMPLO = 0x0UL;
-    //CMPLO 0x0; 
-    AD1CH1CMPLO = 0x0UL;
-    //CMPLO 0x0; 
-    AD1CH2CMPLO = 0x0UL;
-    //CMPHI 0x0; 
-    AD1CH0CMPHI = 0x0UL;
-    //CMPHI 0x0; 
-    AD1CH1CMPHI = 0x0UL;
-    //CMPHI 0x0; 
-    AD1CH2CMPHI = 0x0UL;
+    //CMPLO 1200; 
+    AD1CH0CMPLO = 0x4B0UL;
+    //CMPLO 1200; 
+    AD1CH1CMPLO = 0x4B0UL;
+    //CMPLO 1200; 
+    AD1CH2CMPLO = 0x4B0UL;
+    //CMPHI 4095; 
+    AD1CH0CMPHI = 0xFFFUL;
+    //CMPHI 4095; 
+    AD1CH1CMPHI = 0xFFFUL;
+    //CMPHI 2048; 
+    AD1CH2CMPHI = 0x800UL;
 
     ADC1_ChannelCallbackRegister(&ADC1_ChannelCallback);
     ADC1_Result32BitChannelCallbackRegister(&ADC1_Result32BitChannelCallback);
@@ -542,4 +542,45 @@ void __attribute__ ( ( weak ) ) ADC1_ComparatorCallback (enum ADC1_CMP comparato
 } 
 
 
+void __attribute__ ( ( weak ) ) ADC1_ComparatorTasks ( enum ADC1_CMP comparator )
+{
+    switch(comparator)
+    {   
+        case ADC1_CMP0:
+            if(AD1CMPSTATbits.CH0FLG == 1U)
+            {
+                
+                if(NULL != ADC1_ComparatorHandler)
+                {
+                    (*ADC1_ComparatorHandler)(ADC1_CMP0);
+                }
+                AD1CMPSTATbits.CH0FLG = 0U;
+            }
+            break;
+        case ADC1_CMP1:
+            if(AD1CMPSTATbits.CH1FLG == 1U)
+            {
+                
+                if(NULL != ADC1_ComparatorHandler)
+                {
+                    (*ADC1_ComparatorHandler)(ADC1_CMP1);
+                }
+                AD1CMPSTATbits.CH1FLG = 0U;
+            }
+            break;
+        case ADC1_CMP2:
+            if(AD1CMPSTATbits.CH2FLG == 1U)
+            {
+                
+                if(NULL != ADC1_ComparatorHandler)
+                {
+                    (*ADC1_ComparatorHandler)(ADC1_CMP2);
+                }
+                AD1CMPSTATbits.CH2FLG = 0U;
+            }
+            break;
+        default:
+            break;
+    }
+}
 
