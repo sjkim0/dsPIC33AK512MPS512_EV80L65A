@@ -45,7 +45,7 @@ static void (*SCCP1_InputCaptureHandler)(void) = NULL;
 
 // Section: Driver Interface
 
-const struct INPUT_CAPTURE_INTERFACE Input_Capture1 = {
+const struct INPUT_CAPTURE_INTERFACE CMP1_OUT_IC = {
     .Initialize          = &SCCP1_InputCapture_Initialize,
     .Deinitialize        = &SCCP1_InputCapture_Deinitialize,
     .Start               = &SCCP1_InputCapture_Start,
@@ -62,10 +62,10 @@ const struct INPUT_CAPTURE_INTERFACE Input_Capture1 = {
 
 void SCCP1_InputCapture_Initialize(void)
 {
-    //MOD None; CCSEL enabled; T32 16 Bit; TMRPS 1:1; CLKSEL Standard Speed Peripheral Clock; TMRSYNC disabled; SIDL disabled; ON disabled; SYNC None; ALTSYNC disabled; ONESHOT disabled; TRIGEN disabled; OPS Each Time Base Period Match; RTRGEN disabled; OPSSRC Timer Interrupt Event; 
-    CCP1CON1 = 0x10UL;
-    //ASDG disabled; SSDG disabled; ASDGM disabled; PWMRSEN disabled; ICS IC1; AUXOUT Disabled; ICGSM Level-Sensitive mode; OCAEN disabled; OENSYNC disabled; 
-    CCP1CON2 = 0x0UL;
+    //MOD Every rising edge; CCSEL enabled; T32 16 Bit; TMRPS 1:1; CLKSEL Standard Speed Peripheral Clock; TMRSYNC disabled; SIDL disabled; ON disabled; SYNC None; ALTSYNC disabled; ONESHOT disabled; TRIGEN disabled; OPS Each Time Base Period Match; RTRGEN disabled; OPSSRC Timer Interrupt Event; 
+    CCP1CON1 = 0x11UL;
+    //ASDG disabled; SSDG disabled; ASDGM disabled; PWMRSEN disabled; ICS CMP1; AUXOUT Disabled; ICGSM Level-Sensitive mode; OCAEN disabled; OENSYNC disabled; 
+    CCP1CON2 = 0x10000UL;
     //PSSACE Tri-state; POLACE disabled; OSCNT None; OETRIG disabled; PSSBDF Tri-state; POLBDF disabled; 
     CCP1CON3 = 0x0UL;
     //ICOV disabled; SCEVT disabled; ASEVT disabled; TRCLR disabled; TRSET disabled; ICGARM disabled; RAWIP disabled; RBWIP disabled; TMRLWIP disabled; TMRHWIP disabled; PRLWIP disabled; 

@@ -51,7 +51,7 @@
  *           This allows defining a structure with application specific name using 
  *           the 'Custom Name' field. Application specific name allows the API Portability.
 */
-extern const struct INPUT_CAPTURE_INTERFACE Input_Capture1;
+extern const struct INPUT_CAPTURE_INTERFACE CMP1_OUT_IC;
 
 /** 
   @ingroup  mccpdriver
@@ -64,52 +64,52 @@ extern const struct INPUT_CAPTURE_INTERFACE Input_Capture1;
  * @ingroup  inputcapturedriver
  * @brief    This macro defines the Custom Name for \ref SCCP1_InputCapture_Initialize API
  */
-#define Input_Capture1_Initialize SCCP1_InputCapture_Initialize
+#define CMP1_OUT_IC_Initialize SCCP1_InputCapture_Initialize
 /**
  * @ingroup  inputcapturedriver
  * @brief    This macro defines the Custom Name for \ref SCCP1_InputCapture_Deinitialize API
  */
-#define Input_Capture1_Deinitialize SCCP1_InputCapture_Deinitialize
+#define CMP1_OUT_IC_Deinitialize SCCP1_InputCapture_Deinitialize
 /**
  * @ingroup  inputcapturedriver
  * @brief    This macro defines the Custom Name for \ref SCCP1_InputCapture_Start API
  */
-#define Input_Capture1_Start SCCP1_InputCapture_Start
+#define CMP1_OUT_IC_Start SCCP1_InputCapture_Start
 /**
  * @ingroup  inputcapturedriver
  * @brief    This macro defines the Custom Name for \ref SCCP1_InputCapture_Stop API
  */
-#define Input_Capture1_Stop SCCP1_InputCapture_Stop
+#define CMP1_OUT_IC_Stop SCCP1_InputCapture_Stop
 /**
  * @ingroup  inputcapturedriver
  * @brief    This macro defines the Custom Name for \ref SCCP1_InputCapture_Tasks API
  */
-#define Input_Capture1_Tasks SCCP1_InputCapture_Tasks
+#define CMP1_OUT_IC_Tasks SCCP1_InputCapture_Tasks
 /**
  * @ingroup  inputcapturedriver
  * @brief    This macro defines the Custom Name for \ref SCCP1_InputCapture_DataRead API
  */
-#define Input_Capture1_DataRead SCCP1_InputCapture_DataRead
+#define CMP1_OUT_IC_DataRead SCCP1_InputCapture_DataRead
 /**
  * @ingroup  inputcapturedriver
  * @brief    This macro defines the Custom Name for \ref SCCP1_InputCapture_HasBufferOverflowed API
  */
-#define Input_Capture1_HasBufferOverflowed SCCP1_InputCapture_HasBufferOverflowed
+#define CMP1_OUT_IC_HasBufferOverflowed SCCP1_InputCapture_HasBufferOverflowed
 /**
  * @ingroup  inputcapturedriver
  * @brief    This macro defines the Custom Name for \ref SCCP1_InputCapture_IsBufferEmpty API
  */
-#define Input_Capture1_IsBufferEmpty SCCP1_InputCapture_IsBufferEmpty
+#define CMP1_OUT_IC_IsBufferEmpty SCCP1_InputCapture_IsBufferEmpty
 /**
  * @ingroup  inputcapturedriver
  * @brief    This macro defines the Custom Name for \ref SCCP1_InputCapture_OverflowFlagClear API
  */
-#define Input_Capture1_OverflowFlagClear SCCP1_InputCapture_OverflowFlagClear
+#define CMP1_OUT_IC_OverflowFlagClear SCCP1_InputCapture_OverflowFlagClear
 /**
  * @ingroup  inputcapturedriver
  * @brief    This macro defines the Custom Name for \ref SCCP1_InputCapture_CallbackRegister API
  */
-#define Input_Capture1_InputCapture_CallbackRegister SCCP1_InputCapture_CallbackRegister
+#define CMP1_OUT_IC_InputCapture_CallbackRegister SCCP1_InputCapture_CallbackRegister
 
 // Section: Driver Interface Functions
 

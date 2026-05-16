@@ -36,6 +36,8 @@ static uint16_t _aDC2PollingResultGet(const enum ADC2_CHANNEL channel);
 static void _aDC1InterruptCall(const enum ADC1_CHANNEL channel);
 static void _aDC2InterruptCall(const enum ADC2_CHANNEL channel);
 
+static void cmpICAdcCaptureLoop(void);
+
 void apAdcInit(void)
 {
     initAdc1Comparator();
@@ -51,7 +53,7 @@ void apAdcInit(void)
 void apAdcLoop(void)
 {
     // pollingAdcTest();
-    interruptAdcLoop();
+    // interruptAdcLoop();
     LoopAdc1Comparator();
 }
 
@@ -262,4 +264,8 @@ void ADC2_ChannelCallback(enum ADC2_CHANNEL channel, uint16_t adcVal)
         default:
             break;
     }
+}
+static void cmpICAdcCaptureLoop(void)
+{
+    
 }
